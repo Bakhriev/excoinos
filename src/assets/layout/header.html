@@ -1,17 +1,20 @@
 <header class="header">
-	<div class="header__container container">
+	<div class="header__container">
 		<!--  -->
 
-		<a href="#" class="logo"
+		<a href="#" class="logo header__logo"
 			><img
 				width="158"
 				height="16"
 				src="./assets/img/header-logo.svg"
 				alt="logo"
 		/></a>
-
+		<!-- <a href="#" class="logo mobile-logo"
+			><img width="97" height="32" src="./assets/img/main-logo.svg" alt="logo"
+		/></a> -->
 		<!--  -->
 		<div class="mobile-menu">
+			<button class="btn-close mobile-menu__close"></button>
 			<nav>
 				<ul class="menu">
 					<li>
@@ -29,18 +32,16 @@
 				</ul>
 			</nav>
 			<div class="header__actions">
-				<div class="dropdown">English</div>
+				@include('./components/lang-dropdown.html')
 				<div class="header__buttons">
-					<button>Log in</button>
-					<button>Sign up</button>
+					<button class="btn login-btn">Log in</button>
+					<button class="btn btn-filled sign-up-btn">Sign up</button>
 				</div>
 			</div>
 		</div>
 		<!--  -->
 
-		<button class="burger">
-			<span></span>
-		</button>
+		@include('./components/burger.html')
 
 		<!--  -->
 	</div>

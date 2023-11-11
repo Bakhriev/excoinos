@@ -1,15 +1,27 @@
-//Burger Colors
-$burgerColor: #222;
-$burgerActiveColor: #222;
-
-// Medias
-$large: 1200px;
-$medium: 992px;
-$small: 768px;
-
-// z-index
-$burgerIndex: 4;
-$mobileMenuIndex: 3;
-$overlayIndex: 2;
+:root {
+	--breakpoint-large: 1200px;
+	--breakpoint-medium: 992px;
+	--breakpoint-small: 768px;
+	--overlay-index: 10;
+	--mobile-menu-index: 20;
+	--app-bg: #0b0b0f;
+	--white: #fff;
+	--gray-100: #ebebeb;
+	--text-black: #222;
+	--bg-black: #0d0e1a;
+	--purple-gradient: linear-gradient(
+		90deg,
+		#ff6417 1.86%,
+		rgba(112, 0, 255, 0.94) 101%
+	);
+	--purple-gradient-hover: linear-gradient(
+		257deg,
+		#ff6417 -9%,
+		rgba(112, 0, 255, 0.94) 110.72%
+	);
+}
 
 // Colors
+$breakpoint-large: 1200px;
+$breakpoint-medium: 992px;
+$breakpoint-small: 768px;

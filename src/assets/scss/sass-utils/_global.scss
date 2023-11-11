@@ -1,8 +1,9 @@
 body {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	font-family: 'Segoe UI', sans-serif;
+	font-family: Stolzl, sans-serif;
 	font-size: 16px;
 	font-weight: 400;
+	background-color: var(--app-bg);
 }
 
 .wrapper {
@@ -36,13 +37,14 @@ body {
 	&::before {
 		content: '';
 		position: absolute;
+		z-index: -1;
 		left: 0;
-		bottom: -6px;
+		bottom: -4px;
 
-		height: 1px;
+		height: 4px;
 		width: 100%;
 
-		background: #000;
+		background: var(--purple-gradient);
 		border-radius: 5px;
 		transform: scaleX(0);
 		transition: transform 250ms ease-in-out;
@@ -74,4 +76,14 @@ body {
 .logo {
 	display: block;
 	flex-shrink: 0;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.mobile-logo {
+	width: 97px;
+	height: 31px;
 }
