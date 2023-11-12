@@ -16,6 +16,7 @@
 @import './components/buttons';
 @import './components/exchange';
 @import './components/converter';
+@import './components/email-form';
 
 // layouts
 @import './layout/header';
@@ -25,3 +26,8 @@
 @import './layout/license';
 @import './layout/features';
 @import './layout/faq';
+@import './layout/receive';
+
+.main {
+	padding-bottom: 60px;
+}
