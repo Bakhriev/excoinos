@@ -1,5 +1,6 @@
 .lang-drop {
 	position: relative;
+	user-select: none;
 	// .lang-drop__toggle
 
 	&.active {
@@ -53,6 +54,11 @@
 
 	visibility: hidden;
 	opacity: 0;
+
+	@media screen and (max-width: 992px) {
+		left: 50%;
+		transform: translateX(-50%);
+	}
 
 	// .lang-menu__item
 	&__item {

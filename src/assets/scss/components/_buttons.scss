@@ -9,6 +9,9 @@
 	overflow: hidden;
 	min-width: 50px;
 	border-radius: 8px;
+	&:active {
+		scale: 0.97;
+	}
 }
 
 .btn-filled {
@@ -66,6 +69,10 @@
 		transition: opacity 300ms ease-in-out;
 	}
 
+	&:active {
+		scale: 0.97;
+	}
+
 	@include hover {
 		&::before {
 			opacity: 1;
@@ -77,6 +84,9 @@
 .sign-up-btn {
 	min-width: 100px;
 	padding: 12px 20px;
+	&:active {
+		scale: 0.97;
+	}
 }
 
 .btn-close {
@@ -105,5 +115,9 @@
 
 	&::after {
 		rotate: -50deg;
+	}
+
+	&:active {
+		scale: 0.97;
 	}
 }
