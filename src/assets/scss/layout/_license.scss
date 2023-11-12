@@ -1,8 +1,9 @@
 .license {
-	padding-top: 120px;
+	padding-top: 176px;
 	padding-bottom: 120px;
 	@media screen and (max-width: 992px) {
 		padding-top: 60px;
+		padding-bottom: 8px;
 	}
 	// .license__title
 	&__container {
@@ -10,14 +11,6 @@
 
 	&__title {
 		margin-bottom: 42px;
-		background: linear-gradient(
-			90deg,
-			#ff6417 1.86%,
-			rgba(112, 0, 255, 0.94) 40%
-		);
-		background-clip: text;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
 
 		font-family: Stolzl;
 		font-size: 58px;
@@ -45,6 +38,9 @@
 		}
 		@media screen and (max-width: 520px) {
 			font-size: 28px;
+		}
+		@media screen and (max-width: 359px) {
+			font-size: 26px;
 		}
 	}
 

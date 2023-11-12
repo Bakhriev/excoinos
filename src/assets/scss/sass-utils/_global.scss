@@ -87,3 +87,10 @@ body {
 	width: 97px;
 	height: 31px;
 }
+
+.text-gradient {
+	background: var(--purple-gradient);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
