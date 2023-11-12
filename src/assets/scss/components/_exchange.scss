@@ -1,31 +1,56 @@
 .exchange {
+	margin: 0 auto;
+
 	max-width: 1040px;
 	width: 100%;
-	margin: 0 auto;
-	border-radius: 30px;
-	border: 0.5px solid #32324a;
-	background-color: rgba(20, 20, 27, 0.6);
 	padding: 40px;
+
+	border: 0.5px solid #32324a;
+	border-radius: 30px;
+
+	background-color: rgba(20, 20, 27, 0.6);
+
+	@media screen and (max-width: 992px) {
+		border-radius: 20px;
+		padding: 20px;
+	}
+
 	// .exchange__top
 
 	&__top {
 		display: flex;
 		align-items: center;
-		position: relative;
-		z-index: 1;
-		margin-bottom: 25px;
-		gap: 20px 16px;
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+			align-items: normal;
+		}
+
+		margin-bottom: 17px;
+		gap: 15px 16px;
 	}
 
 	// .exchange__bottom
 
 	&__bottom {
-		position: relative;
-		z-index: 1;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		gap: 20px 35px;
+		@media screen and (max-width: 520px) {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+	}
+
+	&__btn {
+		@media screen and (max-width: 992px) {
+			padding: 22px 35px;
+			font-size: 16px;
+		}
+		@media screen and (max-width: 520px) {
+			width: 100%;
+		}
 	}
 
 	// .exchange__info
@@ -34,10 +59,17 @@
 		display: flex;
 		flex-direction: column;
 		gap: 16px;
+		@media screen and (max-width: 768px) {
+			gap: 14px;
+		}
 	}
 
 	&__icon {
 		margin-top: 25px;
+		cursor: pointer;
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
 	}
 
 	// .exchange__text
@@ -58,6 +90,10 @@
 		font-size: 16px;
 		font-weight: 400;
 		margin-bottom: 15px;
+		@media screen and (max-width: 992px) {
+			margin-bottom: 5px;
+			font-size: 14px;
+		}
 	}
 }
 
@@ -65,22 +101,12 @@
 	width: 18px;
 	height: 18px;
 }
-.by-now-btn {
-	padding: 30px 35px;
-	min-width: 174px;
-	color: var(--white);
-	text-align: center;
-	font-family: Stolzl;
-	font-size: 20px;
-	font-weight: 700;
-	line-height: 100%;
-	text-transform: uppercase;
-}
+
 .exchange-details {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	gap: 20px 40px;
+	gap: 20px 52px;
 }
 .exchange-detail {
 	color: var(--white);

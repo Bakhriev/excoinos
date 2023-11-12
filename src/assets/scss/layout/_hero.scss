@@ -1,6 +1,9 @@
 .hero {
 	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-bottom: 600px;
+	@media screen and (max-width: 768px) {
+		padding-top: 35px;
+	}
 	// .hero__container
 
 	&__container {
@@ -18,6 +21,10 @@
 		align-items: center;
 		flex-wrap: wrap;
 		gap: 20px 15px;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 16px;
+		}
 	}
 
 	// .hero__title
@@ -36,6 +43,14 @@
 		font-size: 72px;
 		font-weight: 500;
 		line-height: 130%;
+		@media screen and (max-width: 992px) {
+			font-size: 45px;
+			line-height: 120%;
+		}
+		@media screen and (max-width: 520px) {
+			margin-bottom: 12px;
+			font-size: 32px;
+		}
 	}
 
 	// .hero__subtitle
@@ -48,5 +63,9 @@
 		font-size: 20px;
 		font-weight: 400;
 		line-height: 150%;
+		@media screen and (max-width: 768px) {
+			margin-bottom: 22px;
+			font-size: 14px;
+		}
 	}
 }

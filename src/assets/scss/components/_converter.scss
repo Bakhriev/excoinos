@@ -1,4 +1,10 @@
 .converter {
+	&.active {
+		.converter-drop {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
 	position: relative;
 	max-width: 460px;
 	width: 100%;
@@ -11,6 +17,12 @@
 	border: 1px solid #2e2e3e;
 	background: #181820;
 
+	@media screen and (max-width: 992px) {
+		border-radius: 8px;
+	}
+	@media screen and (max-width: 768px) {
+		max-width: 100%;
+	}
 	// .converter__field
 
 	&__field {
@@ -29,6 +41,9 @@
 		font-size: 24px;
 		font-weight: 500;
 		line-height: 100%;
+		@media screen and (max-width: 992px) {
+			font-size: 18px;
+		}
 	}
 }
 .converter-select {
@@ -38,8 +53,14 @@
 	align-items: center;
 
 	border-radius: 10px;
+
 	background: #0b0b0f;
 	cursor: pointer;
+
+	@media screen and (max-width: 992px) {
+		padding: 8px;
+		border-radius: 6px;
+	}
 
 	// .converter-select__info
 
@@ -47,11 +68,17 @@
 		display: flex;
 		flex-direction: column;
 		gap: 6px;
+		@media screen and (max-width: 992px) {
+			gap: 4px;
+		}
 	}
 }
 .converter-currency-img {
 	width: 38px;
 	height: 38px;
+	@media screen and (max-width: 450px) {
+		display: none;
+	}
 }
 
 .converter-currency {
@@ -60,6 +87,9 @@
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 100%;
+	@media screen and (max-width: 992px) {
+		font-size: 18px;
+	}
 }
 
 .converter-type {
@@ -68,6 +98,9 @@
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 100%;
+	@media screen and (max-width: 992px) {
+		font-size: 12px;
+	}
 }
 
 .converter-arrow {
@@ -90,8 +123,9 @@
 		visibility: visible;
 	}
 
-	max-width: 460px;
+	max-width: 100%;
 	width: 100%;
+	min-width: 200px;
 
 	border-radius: 10px;
 	border: 0.5px solid #262636;

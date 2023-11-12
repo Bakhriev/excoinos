@@ -7,6 +7,10 @@
 	font: inherit;
 	border: none;
 	overflow: hidden;
+
+	position: relative;
+	z-index: 1;
+
 	min-width: 50px;
 	border-radius: 8px;
 	&:active {
@@ -16,7 +20,6 @@
 
 .btn-filled {
 	color: var(--white);
-	position: relative;
 
 	&::before {
 		content: '';
@@ -55,6 +58,11 @@
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 100%;
+
+	@media screen and (max-width: 768px) {
+		font-size: 16px;
+		padding: 12px 18px;
+	}
 }
 
 .sell-btn {
@@ -72,6 +80,11 @@
 	@include hover {
 		background: #40404f;
 		color: var(--white);
+	}
+
+	@media screen and (max-width: 768px) {
+		font-size: 16px;
+		padding: 12px 18px;
 	}
 }
 
@@ -153,4 +166,16 @@
 	&:active {
 		scale: 0.97;
 	}
+}
+
+.by-now-btn {
+	padding: 30px 35px;
+	min-width: 174px;
+	color: var(--white);
+	text-align: center;
+	font-family: Stolzl;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 100%;
+	text-transform: uppercase;
 }
