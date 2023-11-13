@@ -22,11 +22,11 @@
 							>
 								Home
 							</li>
-							<li class="breadcrumbs-item">Prices</li>
+							<li class="breadcrumbs-item">Documentation</li>
 						</ul>
 						<h1 class="documentation__title section-title">Documentation</h1>
 						<div class="doc-wrapper">
-							<div class="doc-content">
+							<div class="doc-content documentation__content">
 								<div class="doc-content__item">
 									<div class="doc-content__title">Terms and Conditions</div>
 									<p class="doc-content__text">
@@ -108,8 +108,10 @@
 									</p>
 								</div>
 							</div>
-							<ul class="doc-navigation">
-								<li class="doc-navigation__item">1. Terms and Conditions</li>
+							<ul class="doc-navigation documentation__navigation">
+								<li class="doc-navigation__item doc-navigation__item_active">
+									1. Terms and Conditions
+								</li>
 								<li class="doc-navigation__item">2. Privacy policy</li>
 								<li class="doc-navigation__item">
 									3. Anti-Money Laundering and KYC Policy
@@ -124,7 +126,187 @@
 				</section>
 			</main>
 
-			@include('./assets/layout/footer.html')
+			<footer class="footer footer_texture">
+				<div class="footer__container container">
+					<div class="footer__item">
+						<div class="footer__contacts">
+							<a href="#" class="logo main-logo footer__logo"
+								><img
+									width="143"
+									height="45"
+									src="./assets/img/main-logo.svg"
+									alt="logo"
+							/></a>
+							<div>
+								<span>Contacts</span>
+								<a href="mailto:support@paybis.com" class="footer__email"
+									>support@paybis.com</a
+								>
+							</div>
+							<span class="footer__year"
+								>© 2021 GPD Holdings, LLC FinCEN MSB</span
+							>
+							<ul class="footer-social reset-list">
+								<li>
+									<a href="" rel="nofollow" class="footer-social__link">
+										<img
+											width="24"
+											height="24"
+											src="./assets/img/social/instagram.svg"
+											alt="instagram"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="" rel="nofollow" class="footer-social__link">
+										<img
+											width="24"
+											height="24"
+											src="./assets/img/social/facebook.svg"
+											alt="facebook"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="" rel="nofollow" class="footer-social__link">
+										<img
+											width="24"
+											height="24"
+											src="./assets/img/social/twitter.svg"
+											alt="twitter"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="" rel="nofollow" class="footer-social__link">
+										<img
+											width="24"
+											height="24"
+											src="./assets/img/social/youtube.svg"
+											alt="youtube"
+										/>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<ul class="footer-menu reset-list">
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Company</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>About</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Careers</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Press</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>News</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Merch</a
+								>
+							</li>
+						</ul>
+
+						<ul class="footer-menu reset-list">
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Company</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>About</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Careers</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Press</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>News</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Merch</a
+								>
+							</li>
+						</ul>
+
+						<ul class="footer-menu reset-list footer__menu">
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Privacy Policy and Terms of Service</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>CoinFlip Privacy Policy</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>CoinFlip Biometrics Privacy Policy</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>CoinFlip Financial Privacy Notice</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>CoinFlip Terms of Service</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>CoinFlip Trade Desk Terms of Service</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__text-wrapper">
+						<p class="footer__text">
+							PAYBIS POLAND Sp. z o.o. (0001041711), Hoża 86/210, Warsaw,
+							Poland, 00-682PAYBIS USA LTD (87-1891757), 321 S. Boston, Tulsa,
+							OK, 74103© 2014-2023 Paybis.com, all rights reserved.Investing in
+							cryptoassets
+						</p>
+						<p class="footer__text">
+							involves significant risk. You should not invest more than you can
+							afford to lose, and you should ensure that you fully understand
+							the risks involved. We are not regulated by the Financial Conduct
+							Authority and investments in cryptoassets are not covered by the
+							Financial Ombudsman Service or subject to protection under the
+							Financial Services Compensation Scheme.
+						</p>
+					</div>
+				</div>
+			</footer>
 		</div>
 
 		<script type="module" src="assets/js/main.js"></script>

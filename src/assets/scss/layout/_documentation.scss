@@ -1,36 +1,62 @@
 .documentation {
+	padding-top: 85px;
+
+	@media screen and (max-width: 992px) {
+		padding-top: 28px;
+	}
 	// .documentation__container
 
 	&__container {
+		display: flex;
+		flex-direction: column;
 	}
 
 	// .documentation__breadcrumbs
 
 	&__breadcrumbs {
+		margin: 0 auto;
+		margin-bottom: 17px;
+		@media screen and (max-width: 992px) {
+			margin-bottom: 12px;
+		}
 	}
 
 	// .documentation__title
 
 	&__title {
+		margin-bottom: 34px;
+		@media screen and (max-width: 992px) {
+			margin-bottom: 30px;
+		}
 	}
-}
-.container {
-}
-.breadcrumbs {
-}
-.breadcrumbs-item {
-	// .breadcrumbs-item_active
 
-	&_active {
+	&__navigation {
+		@media screen and (max-width: 992px) {
+			display: none;
+		}
 	}
-}
-.border-bottom-line {
+
+	&__content {
+		max-width: 813px;
+		width: 100%;
+		@media screen and (max-width: 992px) {
+			max-width: 100%;
+		}
+	}
 }
 
 .doc-wrapper {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 60px;
 }
 
 .doc-content {
+	display: flex;
+	flex-direction: column;
+	gap: 46px;
+
 	// .doc-content__item
 
 	&__item {
@@ -39,16 +65,71 @@
 	// .doc-content__title
 
 	&__title {
+		margin-bottom: 12px;
+
+		color: var(--white);
+		font-family: Stolzl;
+		font-size: 28px;
+		font-weight: 500;
+		line-height: 150%;
+
+		@media screen and (max-width: 992px) {
+			margin-bottom: 8px;
+			font-size: 18px;
+		}
 	}
 
 	// .doc-content__text
 
 	&__text {
+		color: #f1f1ff;
+		font-family: Lexend;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 150%;
+		&:not(:last-child) {
+			margin-bottom: 25px;
+			@media screen and (max-width: 992px) {
+				margin-bottom: 12px;
+			}
+		}
+
+		@media screen and (max-width: 992px) {
+			font-size: 14px;
+		}
 	}
 }
 .doc-navigation {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	width: 320px;
+	flex-shrink: 0;
+	padding: 10px;
+	border-radius: 10px;
+	border: 0.5px solid #32324a;
+	background: rgba(20, 20, 27, 0.8);
 	// .doc-navigation__item
 
 	&__item {
+		padding: 20px;
+		transition: background-color 120ms ease;
+
+		cursor: pointer;
+
+		font-family: Stolzl;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 150%;
+
+		color: #4f4f68;
+
+		&_active {
+			color: var(--white);
+
+			border-radius: 6px;
+			background-color: #1c1c26;
+		}
 	}
 }
