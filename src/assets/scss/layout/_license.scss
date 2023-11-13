@@ -41,16 +41,13 @@
 			font-size: 26px;
 		}
 	}
-
-	// .license__info
-
-	&__info {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		align-items: center;
-		gap: 30px 40px;
-	}
+}
+.license-info {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 30px 40px;
 }
 .license-item {
 	padding-left: 13px;
