@@ -1,4 +1,8 @@
 .lang-drop {
+	padding: 0;
+	background-color: transparent;
+	border: none;
+
 	position: relative;
 	user-select: none;
 	// .lang-drop__toggle
@@ -54,6 +58,7 @@
 
 	visibility: hidden;
 	opacity: 0;
+	padding: 2px;
 
 	@media screen and (max-width: 992px) {
 		left: 50%;
@@ -62,10 +67,13 @@
 
 	// .lang-menu__item
 	&__item {
+		border: 1px solid transparent;
 		padding: 20px 30px;
 		cursor: pointer;
 		user-select: none;
-		transition: background-color 120ms ease;
+		transition:
+			background-color 120ms ease,
+			border-color 120ms ease;
 		color: var(--gray-100);
 		font-family: Stolzl;
 		font-size: 15px;
@@ -74,6 +82,7 @@
 
 		@include hover {
 			background-color: #15151c;
+			border-color: #262636;
 		}
 	}
 }
