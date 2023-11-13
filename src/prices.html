@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<title>title</title>
+	</head>
+
+	<body>
+		<div class="overlay"></div>
+
+		<div class="wrapper wrapper_circles">
+			@include('assets/layout/header.html')
+
+			<main class="main">
+				<section class="prices">
+					<div class="prices__container container">
+						<ul class="breadcrumbs prices__breadcrumbs">
+							<li
+								class="breadcrumbs-item breadcrumbs-item_active border-bottom-line"
+							>
+								Home
+							</li>
+							<li class="breadcrumbs-item">Prices</li>
+						</ul>
+						<div class="prices__title">Crypto Prices</div>
+						<div class="categories prices__categories">
+							<button
+								class="btn btn-filled categories-btn categories-btn_filled"
+							>
+								Popular
+							</button>
+							<button class="btn categories-btn">Metaverse</button>
+							<button class="btn categories-btn">Entertainment</button>
+							<button class="btn categories-btn">Energy</button>
+							<button class="btn categories-btn">Gaming</button>
+							<button class="btn categories-btn">Music</button>
+							<button class="btn categories-btn">See All 12+</button>
+						</div>
+						<div class="search prices__search">
+							<input
+								type="text"
+								class="search__field"
+								placeholder="Search Coin"
+								value=""
+							/>
+							<img
+								src="./assets/img/search.svg"
+								alt="search icon"
+								aria-hidden="true"
+								class="search-icon search__icon"
+							/>
+						</div>
+
+						<!--  -->
+
+						<table class="table">
+							<thead>
+								<tr class="table__grid table__thead-row">
+									<th>no</th>
+									<th>name</th>
+									<th>last price</th>
+									<th>change</th>
+									<th>market stats</th>
+									<th>trade</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="table__tbody-row table__grid">
+									<td>1</td>
+									<td>
+										<div class="table-info">
+											<img
+												src="./assets/img/btc.svg"
+												alt="btc"
+												class="table-info__img"
+											/>
+											<div class="table-info__wrapper">
+												<div class="table-info__name">Bitcoin</div>
+												<div class="table-info__type">BTC</div>
+											</div>
+										</div>
+									</td>
+									<td>$56,623.54</td>
+									<td>1.41%</td>
+									<td>
+										<img src="./assets/img/table/stats-green.png" alt="" />
+									</td>
+									<td>
+										<button class="btn btn-filled trade-btn">Trade</button>
+									</td>
+								</tr>
+								<tr class="table__tbody-row table__grid">
+									<td>1</td>
+									<td>
+										<div class="table-info">
+											<img
+												src="./assets/img/btc.svg"
+												alt="btc"
+												class="table-info__img"
+											/>
+											<div class="table-info__wrapper">
+												<div class="table-info__name">Bitcoin</div>
+												<div class="table-info__type">BTC</div>
+											</div>
+										</div>
+									</td>
+									<td>$56,623.54</td>
+									<td>1.41%</td>
+									<td>
+										<img src="./assets/img/table/stats-green.png" alt="" />
+									</td>
+									<td>
+										<button class="btn btn-filled trade-btn">Trade</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<!--  -->
+					</div>
+				</section>
+			</main>
+
+			<footer class="footer footer_texture">
+				<div class="footer__container container">
+					<div class="footer__item">
+						<div class="footer__contacts">
+							<a href="#" class="logo main-logo footer__logo"
+								><img
+									width="143"
+									height="45"
+									src="./assets/img/main-logo.svg"
+									alt="logo"
+							/></a>
+							<div>
+								<span>Contacts</span>
+								<a href="mailto:support@paybis.com" class="footer__email"
+									>support@paybis.com</a
+								>
+							</div>
+							<span class="footer__year"
+								>© 2021 GPD Holdings, LLC FinCEN MSB</span
+							>
+							<ul class="footer-social reset-list">
+								<li>
+									<a href="" rel="nofollow" class="footer-social__link">
+										<img
+											width="24"
+											height="24"
+											src="./assets/img/social/instagram.svg"
+											alt="instagram"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="" rel="nofollow" class="footer-social__link">
+										<img
+											width="24"
+											height="24"
+											src="./assets/img/social/facebook.svg"
+											alt="facebook"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="" rel="nofollow" class="footer-social__link">
+										<img
+											width="24"
+											height="24"
+											src="./assets/img/social/twitter.svg"
+											alt="twitter"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="" rel="nofollow" class="footer-social__link">
+										<img
+											width="24"
+											height="24"
+											src="./assets/img/social/youtube.svg"
+											alt="youtube"
+										/>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<ul class="footer-menu reset-list">
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Company</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>About</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Careers</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Press</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>News</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Merch</a
+								>
+							</li>
+						</ul>
+
+						<ul class="footer-menu reset-list">
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Company</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>About</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Careers</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Press</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>News</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Merch</a
+								>
+							</li>
+						</ul>
+
+						<ul class="footer-menu reset-list footer__menu">
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Privacy Policy and Terms of Service</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>CoinFlip Privacy Policy</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>CoinFlip Biometrics Privacy Policy</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>CoinFlip Financial Privacy Notice</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>CoinFlip Terms of Service</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>CoinFlip Trade Desk Terms of Service</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__text-wrapper">
+						<p class="footer__text">
+							PAYBIS POLAND Sp. z o.o. (0001041711), Hoża 86/210, Warsaw,
+							Poland, 00-682PAYBIS USA LTD (87-1891757), 321 S. Boston, Tulsa,
+							OK, 74103© 2014-2023 Paybis.com, all rights reserved.Investing in
+							cryptoassets
+						</p>
+						<p class="footer__text">
+							involves significant risk. You should not invest more than you can
+							afford to lose, and you should ensure that you fully understand
+							the risks involved. We are not regulated by the Financial Conduct
+							Authority and investments in cryptoassets are not covered by the
+							Financial Ombudsman Service or subject to protection under the
+							Financial Services Compensation Scheme.
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script type="module" src="assets/js/main.js"></script>
+	</body>
+</html>

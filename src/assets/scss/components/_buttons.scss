@@ -19,6 +19,7 @@
 }
 
 .btn-filled {
+	position: relative;
 	color: var(--white);
 
 	&::before {
@@ -178,4 +179,17 @@
 	font-weight: 700;
 	line-height: 100%;
 	text-transform: uppercase;
+}
+
+.trade-btn {
+	border-radius: 6px;
+	padding: 8px 24px;
+	color: var(--white);
+	text-align: center;
+	font-family: Stolzl;
+	font-size: 15px;
+	font-weight: 400;
+	@media screen and (max-width: 768px) {
+		padding: 10px 18px;
+	}
 }

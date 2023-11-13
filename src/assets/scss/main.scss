@@ -17,6 +17,9 @@
 @import './components/exchange';
 @import './components/converter';
 @import './components/email-form';
+@import './components/search';
+@import './components/breadcrumbs';
+@import './components/crypto-table';
 
 // layouts
 @import './layout/header';
@@ -27,3 +30,4 @@
 @import './layout/features';
 @import './layout/faq';
 @import './layout/receive';
+@import './layout/prices';
