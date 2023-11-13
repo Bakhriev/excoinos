@@ -4,6 +4,7 @@
 		padding: 0;
 	}
 	border-collapse: collapse;
+	// Reset
 
 	width: 100%;
 	color: #fff;
@@ -23,18 +24,21 @@
 			minmax(50px, 60px) minmax(240px, 1fr) minmax(100px, 200px)
 			minmax(60px, 170px) minmax(100px, 220px) minmax(100px, 100px);
 
+		// 992
 		@media screen and (max-width: 992px) {
 			grid-template-columns:
 				minmax(50px, 60px) minmax(180px, 1fr) minmax(100px, 200px)
 				minmax(60px, 170px) minmax(100px, 220px) minmax(100px, 100px);
 		}
 
+		// 768
 		@media screen and (max-width: 768px) {
 			grid-template-columns:
 				minmax(50px, 60px) minmax(160px, 1fr) minmax(100px, 200px)
 				minmax(60px, 170px) minmax(70px, 100px);
 		}
 
+		// 600
 		@media screen and (max-width: 600px) {
 			grid-template-columns: 1fr 100px;
 		}
@@ -52,9 +56,17 @@
 		}
 
 		th {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			text-transform: uppercase;
+
+			color: #b6b6b6;
+
 			&:first-child {
 				padding-left: 30px;
 			}
+
 			@media screen and (max-width: 768px) {
 				&:first-child {
 					padding-left: 10px;
@@ -63,27 +75,19 @@
 					display: none;
 				}
 			}
-			display: flex;
-			align-items: center;
-			justify-content: flex-start;
-			text-transform: uppercase;
-
-			color: #b6b6b6;
 		}
-
-		// @media screen and (max-width: 1400px) {
-		// 	display: none;
-		// }
 	}
 
 	&__tbody-row {
 		background-color: rgba(24, 24, 32, 0.8);
+
 		&:last-child {
 			border-radius: 0px 0px 4px 4px;
 		}
 		&:not(:last-child) {
 			border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 		}
+
 		td {
 			display: flex;
 			align-items: center;
@@ -95,6 +99,7 @@
 				padding-left: 30px;
 				color: #b6b6b6;
 			}
+
 			@media screen and (max-width: 768px) {
 				&:first-child {
 					padding-left: 10px;
@@ -103,6 +108,7 @@
 					display: none;
 				}
 			}
+
 			@media screen and (max-width: 600px) {
 				&:first-child {
 					display: none;
@@ -128,10 +134,12 @@
 .table-info {
 	display: flex;
 	align-items: center;
+
 	&__img {
 		margin-right: 22px;
 		width: 44px;
 		height: 44px;
+
 		@media screen and (max-width: 992px) {
 			margin-right: 10px;
 		}
@@ -142,11 +150,9 @@
 		}
 	}
 
-	&__name {
-	}
-
 	&__type {
 		position: relative;
+
 		&::before {
 			content: '';
 			position: absolute;
@@ -161,6 +167,10 @@
 			@media screen and (max-width: 992px) {
 				display: none;
 			}
+		}
+
+		@media screen and (max-width: 600px) {
+			color: #c0c9d8;
 		}
 	}
 
@@ -197,8 +207,10 @@
 	@media screen and (max-width: 600px) {
 		svg {
 			display: block;
-			fill: #ff274e;
+
 			transform: rotate(90deg);
+
+			fill: #ff274e;
 		}
 	}
 }
