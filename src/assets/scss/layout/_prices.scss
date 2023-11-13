@@ -52,6 +52,23 @@
 			margin-bottom: 35px;
 		}
 	}
+
+	&__table {
+		margin-bottom: 28px;
+	}
+
+	&__link {
+		display: block;
+		width: max-content;
+		@media screen and (max-width: 768px) {
+			margin: 0 auto;
+		}
+		&::before {
+			height: 1px;
+			bottom: 1px;
+			transform: scale(1);
+		}
+	}
 }
 
 .categories {
