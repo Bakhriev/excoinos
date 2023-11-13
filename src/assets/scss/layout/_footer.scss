@@ -19,6 +19,28 @@
 			top: 14px;
 		}
 	}
+	&_texture {
+		&::after {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			bottom: 0;
+			left: 0;
+			width: 1442px;
+			height: 526px;
+
+			background-image: url('../img/textures/footer-texture.png');
+			background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat;
+
+			@media screen and (max-width: 768px) {
+				left: -291px;
+				width: 800px;
+				height: 277px;
+			}
+		}
+	}
 
 	// .footer__container
 

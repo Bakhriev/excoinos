@@ -1,7 +1,12 @@
 .faq {
 	padding-top: 192px;
+
 	@media screen and (max-width: 992px) {
 		padding-top: 66px;
+	}
+
+	&_texture {
+		// Add Texture
 	}
 	// .faq__container
 
