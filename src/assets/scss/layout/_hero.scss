@@ -33,22 +33,11 @@
 
 		max-width: 940px;
 
-		background: linear-gradient(180deg, #fff 56.33%, #636387 99.77%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-
-		text-align: center;
-		font-family: Stolzl;
-		font-size: 72px;
-		font-weight: 500;
-		line-height: 130%;
 		@media screen and (max-width: 992px) {
-			font-size: 45px;
 			line-height: 120%;
 		}
 		@media screen and (max-width: 520px) {
 			margin-bottom: 12px;
-			font-size: 32px;
 		}
 	}
 

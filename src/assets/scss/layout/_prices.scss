@@ -13,23 +13,11 @@
 	}
 	&__title {
 		margin-bottom: 22px;
-		text-align: center;
-		font-family: Stolzl;
-		font-size: 72px;
-		font-weight: 500;
-		line-height: 130%;
-
-		background: linear-gradient(180deg, #fff 56.33%, #636387 99.77%);
-		background-clip: text;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
 
 		@media screen and (max-width: 992px) {
-			font-size: 42px;
 			margin-bottom: 16px;
 		}
 		@media screen and (max-width: 768px) {
-			font-size: 32px;
 		}
 	}
 
