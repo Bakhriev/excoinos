@@ -17,6 +17,11 @@ body {
 
 .main {
 	flex-grow: 1;
+	padding-bottom: 90px;
+
+	@media screen and (max-width: 768px) {
+		padding-bottom: 63px;
+	}
 }
 
 .container {
@@ -88,9 +93,20 @@ body {
 	height: 31px;
 }
 
+.main-logo {
+	width: 143px;
+	height: 33px;
+}
+
 .text-gradient {
 	background: var(--purple-gradient);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+.reset-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
 }
