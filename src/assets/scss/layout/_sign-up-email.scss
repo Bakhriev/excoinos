@@ -10,6 +10,9 @@
 	&__buttons {
 		@media screen and (max-width: 359px) {
 			flex-wrap: wrap;
+			button {
+				width: 100%;
+			}
 		}
 	}
 }
