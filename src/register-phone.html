@@ -9,14 +9,24 @@
 
 	<body>
 		<div class="auth-wrapper register-phone-page">
-			<div class="container">
-				<a href="#" class="logo auth-wrapper__logo logo-lg"
-					><img
-						width="158"
-						height="16"
-						src="./assets/img/header-logo.svg"
-						alt="logo"
-				/></a>
+			<div class="container auth-wrapper__container">
+				<div class="logo-container">
+					<a href="#" class="logo logo_main"
+						><img
+							width="161"
+							height="24"
+							src="./assets/img/main-logo.svg"
+							alt="logo"
+					/></a>
+
+					<a href="#" class="logo logo_mobile"
+						><img
+							width="150"
+							height="40"
+							src="./assets/img/mobile-logo.svg"
+							alt="logo"
+					/></a>
+				</div>
 				<div class="auth-card">
 					<div class="auth-card__title">Register</div>
 
@@ -46,7 +56,7 @@
 									id="custom-checkbox"
 									class="custom-checkbox"
 								/>
-								<div class="custom-checkbox__checkmark"></div>
+								<div class="custom-checkbox-container__checkmark"></div>
 							</label>
 							<label class="register-phone-page__label" for="custom-checkbox"
 								>I've read and accept the terms of service refund policy</label
@@ -59,7 +69,7 @@
 									id="custom-checkbox-2"
 									class="custom-checkbox"
 								/>
-								<div class="custom-checkbox__checkmark"></div>
+								<div class="custom-checkbox-container__checkmark"></div>
 							</label>
 							<label class="register-phone-page__label" for="custom-checkbox-2"
 								>I consent to the privacy policy</label
@@ -67,7 +77,7 @@
 						</div>
 					</div>
 
-					<div class="auth__buttons register-phone-page__buttons">
+					<div class="auth-buttons auth-buttons_wrap">
 						<button class="go-back-btn">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"

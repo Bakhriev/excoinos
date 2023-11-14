@@ -12,11 +12,6 @@
 	&.active {
 		border: none;
 	}
-}
-
-.custom-checkbox {
-	display: none;
-	// .custom-checkbox__checkmark
 
 	&__checkmark {
 		position: absolute;
@@ -35,6 +30,11 @@
 	}
 }
 
-.custom-checkbox:checked ~ .custom-checkbox__checkmark {
+.custom-checkbox {
+	display: none;
+	// .custom-checkbox__checkmark
+}
+
+.custom-checkbox:checked ~ .custom-checkbox-container__checkmark {
 	display: block;
 }
