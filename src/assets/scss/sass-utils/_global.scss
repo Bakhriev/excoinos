@@ -45,6 +45,7 @@ body {
 	margin: 0 auto;
 
 	max-width: 1270px;
+	width: 100%;
 	padding: 0 15px;
 }
 
@@ -259,4 +260,40 @@ body {
 			transform: translateY(0);
 		}
 	}
+}
+
+.go-back-btn {
+	user-select: none;
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	cursor: pointer;
+
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: #b1a7c6;
+	font-family: Stolzl;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 140%;
+	transition: color 120ms ease-in-out;
+	@include hover {
+		color: var(--white);
+	}
+
+	svg {
+		width: 18px;
+		height: 14px;
+	}
+}
+
+.btn-disabled {
+	opacity: 0.2 !important;
+	pointer-events: none !important;
+	tabindex: -1;
+}
+
+.mb-25 {
+	margin-bottom: 25px;
 }

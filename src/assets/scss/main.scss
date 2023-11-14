@@ -21,6 +21,10 @@
 @import './components/breadcrumbs';
 @import './components/crypto-table';
 @import './components/auth';
+@import './components/checkbox/custom-checkbox';
+
+//
+@import './components/auths/confirm';
 
 // layouts
 @import './layout/header';
@@ -37,3 +41,5 @@
 @import './layout/login';
 @import './layout/register';
 @import './layout/password-page';
+@import './layout/sign-up-email';
+@import './layout/register-phone';

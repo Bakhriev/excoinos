@@ -1,4 +1,23 @@
+.auth-wrapper {
+	min-height: 100vh;
+	padding: 70px 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	&__logo {
+		margin: 0 auto;
+		margin-bottom: 90px;
+
+		@media screen and (max-width: 992px) {
+			margin-bottom: 40px;
+		}
+	}
+}
+
 .auth-card {
+	margin: 0 auto;
 	max-width: 580px;
 	width: 100%;
 	padding: 60px;
@@ -10,7 +29,6 @@
 	@media screen and (max-width: 992px) {
 		padding: 20px;
 	}
-	// .auth-card__title
 
 	&__title {
 		margin-bottom: 40px;
@@ -26,7 +44,21 @@
 		}
 	}
 
-	// .auth-card__inputs
+	&__subtitle {
+		margin-bottom: 30px;
+		@media screen and (max-width: 992px) {
+			margin-bottom: 20px;
+			font-size: 14px;
+		}
+		color: #fff;
+		font-family: Stolzl;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 140%;
+		span {
+			font-weight: 500;
+		}
+	}
 
 	&__inputs {
 		margin-bottom: 35px;
@@ -39,8 +71,6 @@
 			margin-bottom: 15px;
 		}
 	}
-
-	// .auth-card__btn
 
 	&__btn {
 		max-width: 200px;
@@ -57,8 +87,6 @@
 		letter-spacing: 0.75px;
 		text-transform: uppercase;
 	}
-
-	// .auth-card__text
 
 	&__text {
 		position: relative;
@@ -105,7 +133,6 @@
 	}
 }
 .auth {
-	// .auth__buttons
 	&__buttons {
 		display: flex;
 		align-items: center;
@@ -152,7 +179,6 @@
 	@media screen and (max-width: 992px) {
 		gap: 20px 18px;
 	}
-	// .auth-socials__link
 
 	&__link {
 		width: 65px;

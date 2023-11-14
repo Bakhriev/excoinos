@@ -1,17 +1,4 @@
 .register-page {
-	// .register-page__container
-
-	&__container {
-		min-height: 100vh;
-		padding: 70px 15px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-
-	// .register-page__actions
-
 	&__actions {
 		display: flex;
 		align-items: center;
@@ -29,16 +16,6 @@
 			}
 		}
 	}
-
-	&__logo {
-		margin-bottom: 90px;
-
-		@media screen and (max-width: 992px) {
-			margin-bottom: 40px;
-		}
-	}
-
-	// .register-page__registered
 
 	&__registered {
 		display: flex;

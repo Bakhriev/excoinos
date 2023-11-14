@@ -8,7 +8,7 @@
 	</head>
 
 	<body>
-		<div class="password-page auth-wrapper">
+		<div class="auth-wrapper">
 			<div class="container">
 				<a href="#" class="logo auth-wrapper__logo"
 					><img
@@ -18,27 +18,48 @@
 						alt="logo"
 				/></a>
 				<div class="auth-card">
-					<div class="auth-card__title">Sign up</div>
-
+					<div class="auth-card__title signup-email-page__title">Sign up</div>
+					<div class="auth-card__subtitle">
+						Enter the code sent to <span>+79270503433</span>
+					</div>
 					<form action="#">
-						<div class="auth-card__inputs">
-							<div>
-								<label class="auth__label" for="password">Password</label>
-								<input type="password" class="form-input" id="password" />
-							</div>
-							<div>
-								<label class="auth__label" for="password-confirm"
-									>Repeat the password</label
-								>
-								<input
-									type="password"
-									class="form-input"
-									id="password-confirm"
-								/>
-							</div>
+						<div class="confirm-code-inputs mb-25">
+							<input
+								type="text"
+								inputmode="numeric"
+								class="confirm-code-input"
+							/>
+							<input
+								type="text"
+								inputmode="numeric"
+								class="confirm-code-input"
+							/>
+							<input
+								type="text"
+								inputmode="numeric"
+								class="confirm-code-input"
+							/>
+							<input
+								type="text"
+								inputmode="numeric"
+								class="confirm-code-input"
+							/>
+							<input
+								type="text"
+								inputmode="numeric"
+								class="confirm-code-input"
+							/>
+							<input
+								type="text"
+								inputmode="numeric"
+								class="confirm-code-input"
+							/>
 						</div>
 					</form>
-					<div class="auth__buttons password-page__buttons">
+					<div class="confirm-time confirm-time_position">
+						Resend code in 3:55 seconds
+					</div>
+					<div class="auth__buttons signup-email-page__buttons">
 						<button class="go-back-btn">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +90,9 @@
 							</svg>
 							<span>to back</span>
 						</button>
-						<button class="btn btn-primary btn-md">Continue</button>
+						<button class="btn btn-primary btn-md btn-disabled">
+							Continue
+						</button>
 					</div>
 				</div>
 			</div>
