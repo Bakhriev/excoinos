@@ -7,19 +7,22 @@
 	font: inherit;
 	border: none;
 	overflow: hidden;
+	user-select: none;
 
 	position: relative;
 	z-index: 1;
 
 	min-width: 50px;
 	border-radius: 8px;
+
 	&:active {
 		scale: 0.97;
 	}
 }
 
-.btn-filled {
+.btn-primary {
 	position: relative;
+	z-index: 1;
 	color: var(--white);
 
 	&::before {
@@ -30,6 +33,7 @@
 		background: var(--purple-gradient);
 		transition: opacity 300ms ease-in-out;
 	}
+
 	&::after {
 		content: '';
 		position: absolute;
@@ -50,9 +54,19 @@
 	}
 }
 
-.crypto-btn {
-	min-width: 137px;
+.btn-secondary {
+	color: #9d9db1;
+	background-color: #24242d;
+	transition:
+		background-color 300ms ease-in-out,
+		color 300ms ease-in-out;
+	@include hover {
+		background-color: #40404f;
+		color: var(--white);
+	}
+}
 
+.crypto-btn {
 	color: var(--white);
 	text-align: center;
 	font-family: Stolzl;
@@ -67,21 +81,11 @@
 }
 
 .sell-btn {
-	min-width: 137px;
-
 	color: #9d9db1;
 	font-family: Stolzl;
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 100%;
-	background: #24242d;
-	transition:
-		background-color 300ms ease-in-out,
-		color 300ms ease-in-out;
-	@include hover {
-		background: #40404f;
-		color: var(--white);
-	}
 
 	@media screen and (max-width: 768px) {
 		font-size: 16px;
@@ -91,6 +95,14 @@
 
 .btn-sm {
 	padding: 12px 16px;
+}
+
+.btn-md {
+	padding: 25px 45px;
+}
+
+.btn-lg {
+	padding: 30px 35px;
 }
 
 .login-btn {
@@ -128,14 +140,6 @@
 	}
 }
 
-.sign-up-btn {
-	min-width: 100px;
-	padding: 12px 20px;
-	&:active {
-		scale: 0.97;
-	}
-}
-
 .btn-close {
 	background-color: transparent;
 	padding: 0;
@@ -170,8 +174,6 @@
 }
 
 .by-now-btn {
-	padding: 30px 35px;
-	min-width: 174px;
 	color: var(--white);
 	text-align: center;
 	font-family: Stolzl;
@@ -179,6 +181,11 @@
 	font-weight: 700;
 	line-height: 100%;
 	text-transform: uppercase;
+
+	@media screen and (max-width: 992px) {
+		padding: 22px 35px;
+		font-size: 16px;
+	}
 }
 
 .trade-btn {

@@ -169,3 +169,21 @@ body {
 
 	cursor: pointer;
 }
+
+.gradient-border {
+	position: relative;
+	z-index: 1;
+	&::before {
+		content: '';
+		position: absolute;
+		border-radius: inherit;
+		inset: 0;
+		padding: 2px;
+		background: var(--purple-gradient);
+		-webkit-mask:
+			linear-gradient(#fff 0 0) content-box,
+			linear-gradient(#fff 0 0);
+		-webkit-mask-composite: xor;
+		mask-composite: exclude;
+	}
+}

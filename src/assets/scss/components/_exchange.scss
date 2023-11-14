@@ -44,10 +44,6 @@
 	}
 
 	&__btn {
-		@media screen and (max-width: 992px) {
-			padding: 22px 35px;
-			font-size: 16px;
-		}
 		@media screen and (max-width: 520px) {
 			width: 100%;
 		}

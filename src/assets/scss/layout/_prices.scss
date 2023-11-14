@@ -72,6 +72,16 @@
 	border-radius: 6px;
 	border: 1px solid rgba(255, 255, 255, 0.05);
 	background-color: #181820;
+
+	transition:
+		background-color 300ms ease-in-out,
+		color 300ms ease-in-out;
+
+	@include hover {
+		color: #fff;
+		background-color: #40404f;
+	}
+
 	&_filled {
 		border-color: transparent;
 		color: var(--white);
