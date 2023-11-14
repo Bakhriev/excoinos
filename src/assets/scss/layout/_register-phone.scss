@@ -26,6 +26,15 @@
 		cursor: pointer;
 		user-select: none;
 	}
+
+	&__buttons {
+		@media screen and (max-width: 400px) {
+			flex-wrap: wrap;
+			button {
+				width: 100%;
+			}
+		}
+	}
 }
 
 .phone-input {
