@@ -20,6 +20,7 @@
 @import './components/search';
 @import './components/breadcrumbs';
 @import './components/crypto-table';
+@import './components/auth';
 
 // layouts
 @import './layout/header';
@@ -35,3 +36,4 @@
 @import './layout/contact';
 @import './layout/login';
 @import './layout/register';
+@import './layout/password-page';
