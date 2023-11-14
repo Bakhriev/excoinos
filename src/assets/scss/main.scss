@@ -10,36 +10,40 @@
 @import './sass-utils/global';
 
 // components
-@import './components/overlay';
-@import './components/burger';
-@import './components/lang-dropdown';
-@import './components/buttons';
-@import './components/exchange';
-@import './components/converter';
-@import './components/email-form';
-@import './components/search';
 @import './components/breadcrumbs';
+@import './components/burger';
+@import './components/buttons';
+@import './components/converter';
 @import './components/crypto-table';
-@import './components/auth';
+@import './components/exchange';
+@import './components/lang-dropdown';
+@import './components/overlay';
+@import './components/search';
+
+// components / checkbox
 @import './components/checkbox/custom-checkbox';
 
-//
+// components / auths
 @import './components/auths/confirm';
+@import './components/auths/auth';
 
-// layouts
+// layout
+@import './layout/currency-cards';
+@import './layout/faq';
+@import './layout/features';
+@import './layout/footer';
 @import './layout/header';
 @import './layout/hero';
-@import './layout/footer';
-@import './layout/currency-cards';
 @import './layout/license';
-@import './layout/features';
-@import './layout/faq';
 @import './layout/receive';
-@import './layout/prices';
-@import './layout/documentation';
-@import './layout/contact';
-@import './layout/login';
-@import './layout/register';
-@import './layout/password-page';
-@import './layout/sign-up-email';
-@import './layout/register-phone';
+
+// Layout / Pages
+
+@import './layout/pages/contact';
+@import './layout/pages/documentation';
+@import './layout/pages/login';
+@import './layout/pages/password-page';
+@import './layout/pages/prices';
+@import './layout/pages/register-phone';
+@import './layout/pages/register';
+@import './layout/pages/sign-up-email';
