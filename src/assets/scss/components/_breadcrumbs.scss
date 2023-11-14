@@ -34,27 +34,10 @@
 					right: -18px;
 				}
 			}
-			&::before {
-				bottom: 0px;
-				height: 1px;
-			}
 		}
 
 		@media screen and (max-width: 768px) {
 			font-size: 14px;
-		}
-
-		// .breadcrumbs-item_active
-		&_active {
-			cursor: pointer;
-			background: linear-gradient(
-				91deg,
-				#ff6417 25.86%,
-				rgba(112, 0, 255, 0.94) 80.79%
-			);
-			background-clip: text;
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
 		}
 	}
 }
