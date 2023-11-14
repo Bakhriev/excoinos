@@ -30,6 +30,10 @@
 		padding: 20px;
 	}
 
+	@media screen and (max-width: 500px) {
+		border-radius: 16px;
+	}
+
 	&__title {
 		margin-bottom: 40px;
 		color: #fff;
@@ -75,7 +79,6 @@
 	&__btn {
 		max-width: 200px;
 		width: 100%;
-		min-width: 120px;
 		padding: 24px 20px;
 
 		color: #fff;
@@ -86,6 +89,10 @@
 		line-height: normal;
 		letter-spacing: 0.75px;
 		text-transform: uppercase;
+
+		@media screen and (max-width: 500px) {
+			padding: 20px 12px;
+		}
 	}
 
 	&__text {
@@ -177,7 +184,7 @@
 	gap: 20px 20px;
 	justify-content: center;
 	@media screen and (max-width: 992px) {
-		gap: 20px 18px;
+		gap: 20px 10px;
 	}
 
 	&__link {
