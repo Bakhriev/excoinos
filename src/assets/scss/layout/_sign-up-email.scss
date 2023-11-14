@@ -6,4 +6,10 @@
 	&__inputs {
 		margin-bottom: 25px;
 	}
+
+	&__buttons {
+		@media screen and (max-width: 359px) {
+			flex-wrap: wrap;
+		}
+	}
 }
