@@ -92,11 +92,6 @@
 		}
 	}
 
-	// .footer__logo
-
-	&__logo {
-	}
-
 	&__year {
 		color: rgba(255, 255, 255, 0.7);
 		font-family: Stolzl;
@@ -145,6 +140,8 @@
 
 	&__link {
 		display: block;
+		width: 24px;
+		height: 24px;
 	}
 }
 
@@ -166,4 +163,21 @@
 		font-weight: 400;
 		line-height: 150%;
 	}
+}
+
+[data-icon='instagram'] {
+	background: url('../img/social/instagram.svg') no-repeat center/cover;
+	background-size: 24px 24px;
+}
+[data-icon='facebook'] {
+	background: url('../img/social/facebook.svg') no-repeat center;
+	background-size: 24px 24px;
+}
+[data-icon='twitter'] {
+	background: url('../img/social/twitter.svg') no-repeat center/cover;
+	background-size: 24px 24px;
+}
+[data-icon='youtube'] {
+	background: url('../img/social/youtube.svg') no-repeat center;
+	background-size: 24px 24px;
 }

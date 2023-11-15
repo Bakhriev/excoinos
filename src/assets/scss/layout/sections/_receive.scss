@@ -108,5 +108,11 @@
 		background-color: transparent;
 		border: none;
 		cursor: pointer;
+		width: 16px;
+		height: 16px;
+		background-image: url('../img/email-arrow.svg');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 }

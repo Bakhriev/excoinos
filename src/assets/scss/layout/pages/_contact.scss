@@ -26,8 +26,13 @@
 
 	&__title {
 		margin-bottom: 48px;
+
 		@media screen and (max-width: 992px) {
 			margin-bottom: 8px;
+			font-size: 42px;
+		}
+		@media screen and (max-width: 768px) {
+			font-size: 32px;
 		}
 	}
 
