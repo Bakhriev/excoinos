@@ -1,0 +1,32 @@
+.security {
+	// .security__top
+
+	&__top {
+		margin-bottom: 40px;
+		display: flex;
+		gap: 25px;
+		align-items: flex-end;
+
+		button {
+			width: 200px;
+		}
+	}
+
+	&__phone {
+		max-width: 460px;
+		width: 100%;
+	}
+
+	// .security__password
+
+	&__password {
+		margin-bottom: 30px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	&__btn {
+		width: 200px;
+	}
+}
