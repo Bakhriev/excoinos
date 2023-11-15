@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<title>title</title>
+	</head>
+
+	<body>
+		<div class="overlay"></div>
+
+		<div class="wrapper wrapper_circles">
+			<header class="header">
+				<div class="header__container">
+					<div class="logo-container">
+						<a href="#" class="logo logo_main"
+							><img
+								width="161"
+								height="24"
+								src="./assets/img/main-logo.svg"
+								alt="logo"
+						/></a>
+
+						<a href="#" class="logo logo_mobile"
+							><img
+								width="150"
+								height="40"
+								src="./assets/img/mobile-logo.svg"
+								alt="logo"
+						/></a>
+					</div>
+					<div class="mobile-menu">
+						<button
+							class="btn-close mobile-menu__close"
+							aria-label="click to close menu"
+						></button>
+						<nav>
+							<ul class="menu">
+								<li>
+									<a href="#" class="menu__link border-bottom-line"
+										>Buy / Sell</a
+									>
+								</li>
+								<li>
+									<a href="#" class="menu__link border-bottom-line"
+										>Crypto Prices</a
+									>
+								</li>
+								<li>
+									<a href="#" class="menu__link border-bottom-line"
+										>Documentation</a
+									>
+								</li>
+								<li>
+									<a href="#" class="menu__link border-bottom-line">Contact</a>
+								</li>
+							</ul>
+						</nav>
+
+						<div class="header__buttons">
+							<button class="lang-drop" tabindex="0">
+								<div class="lang-drop__toggle text-gradient">
+									<div>antonharitonov</div>
+									<svg
+										class="lang-drop__icon"
+										xmlns="http://www.w3.org/2000/svg"
+										width="14"
+										height="9"
+										viewBox="0 0 14 9"
+										fill="none"
+									>
+										<g clip-path="url(#clip0_63_546)">
+											<path
+												d="M7.66178 8.66521L12.7344 2.77913C12.8186 2.68245 12.8854 2.56743 12.931 2.44071C12.9765 2.31398 13 2.17805 13 2.04077C13 1.90348 12.9765 1.76756 12.931 1.64083C12.8854 1.5141 12.8186 1.39908 12.7344 1.30241C12.5662 1.10872 12.3387 1 12.1015 1C11.8643 1 11.6367 1.10872 11.4685 1.30241L6.97944 6.45013L2.53526 1.30241C2.36704 1.10872 2.13949 1 1.9023 1C1.66511 1 1.43756 1.10872 1.26934 1.30241C1.18451 1.39872 1.11702 1.51358 1.07079 1.64032C1.02455 1.76706 1.00049 1.90318 1 2.04077C1.00049 2.17836 1.02455 2.31447 1.07079 2.44121C1.11702 2.56796 1.18451 2.68281 1.26934 2.77913L6.34199 8.66521C6.42607 8.77077 6.5281 8.85501 6.64168 8.91263C6.75525 8.97025 6.8779 9 7.00189 9C7.12588 9 7.24852 8.97025 7.36209 8.91263C7.47567 8.85501 7.57771 8.77077 7.66178 8.66521Z"
+												fill="url(#paint0_linear_63_546)"
+											/>
+										</g>
+										<defs>
+											<linearGradient
+												id="paint0_linear_63_546"
+												x1="2.49999"
+												y1="7.49999"
+												x2="15.8276"
+												y2="1.76087"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="#FF6417" />
+												<stop
+													offset="1"
+													stop-color="#7000FF"
+													stop-opacity="0.94"
+												/>
+											</linearGradient>
+											<clipPath id="clip0_63_546">
+												<rect
+													width="9"
+													height="14"
+													fill="white"
+													transform="translate(14) rotate(90)"
+												/>
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+								<ul class="lang-menu">
+									<li class="lang-menu__item" tabindex="0">Text 1</li>
+									<li class="lang-menu__item" tabindex="0">Text 1</li>
+									<li class="lang-menu__item" tabindex="0">Text 1</li>
+								</ul>
+							</button>
+						</div>
+					</div>
+
+					<!--  -->
+
+					@include('./assets/layout/components/burger.html')
+
+					<!--  -->
+				</div>
+			</header>
+
+			<main class="main">
+				<section class="profile">
+					<div class="container profile__container">
+						<div class="profile__title">Personal account</div>
+						<div class="profile-nav-menu profile__menu">
+							<button class="profile-nav-menu__item active">
+								Profile settings
+							</button>
+							<button class="profile-nav-menu__item">Verification</button>
+							<button class="profile-nav-menu__item">Security</button>
+						</div>
+
+						<div class="profile-settings visually-hidden">
+							<div class="profile-settings__fields">
+								<div class="user-field">
+									<label class="user-field__label" for="">E-mail</label>
+									<input
+										type="text"
+										class="input"
+										placeholder="Введите телефон или e-mail"
+									/>
+								</div>
+								<!--  -->
+								<div class="user-field">
+									<label class="user-field__label" for="">Language</label>
+									<input
+										type="text"
+										class="input"
+										placeholder="Введите телефон или e-mail"
+									/>
+								</div>
+								<!--  -->
+
+								<div class="user-field">
+									<label class="user-field__label" for="">Имя</label>
+									<input
+										type="text"
+										class="input"
+										placeholder="Введите телефон или e-mail"
+									/>
+								</div>
+
+								<div class="user-field">
+									<label class="user-field__label" for="">Фамилия</label>
+									<input
+										type="text"
+										class="input"
+										placeholder="Введите телефон или e-mail"
+									/>
+								</div>
+
+								<div class="user-field">
+									<label class="user-field__label" for="">Адрес</label>
+									<input
+										type="text"
+										class="input"
+										placeholder="Введите телефон или e-mail"
+									/>
+								</div>
+							</div>
+							<button class="btn btn-primary btn-md profile-settings__btn">
+								Save
+							</button>
+						</div>
+
+						<div class="verification">
+							<div class="verification__cards">
+								<!-- 1 -->
+								<div class="verification-card approved">
+									<img
+										class="verification-card__icon"
+										src="./assets/img/verification/approved.svg"
+										alt="status approved"
+									/>
+									<div class="verification-card__info">
+										<div class="verification-card__title">
+											Подтверждение паспорта
+										</div>
+										<div class="verification-card__status">Подтверждён</div>
+									</div>
+								</div>
+								<!-- 2 -->
+								<div class="verification-card unload">
+									<img
+										class="verification-card__icon"
+										src="./assets/img/verification/basic.svg"
+										alt="status approved"
+									/>
+									<div class="verification-card__info">
+										<div class="verification-card__title">
+											Подтверждение паспорта
+										</div>
+										<div class="verification-card__status">Не загружен</div>
+									</div>
+									<button
+										class="load-data text-gradient verification-card__load"
+									>
+										<span>Загрузить данные</span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="12"
+											viewBox="0 0 16 12"
+											fill="none"
+										>
+											<path
+												d="M0.888672 5.99979H15.1109M15.1109 5.99979L9.77756 0.856934M15.1109 5.99979L9.77756 11.1426"
+												stroke="url(#paint0_linear_93_315)"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+											<defs>
+												<linearGradient
+													id="paint0_linear_93_315"
+													x1="18"
+													y1="1.00005"
+													x2="-0.499987"
+													y2="9.50003"
+													gradientUnits="userSpaceOnUse"
+												>
+													<stop stop-color="#FF6417" />
+													<stop
+														offset="1"
+														stop-color="#7000FF"
+														stop-opacity="0.94"
+													/>
+												</linearGradient>
+											</defs>
+										</svg>
+									</button>
+								</div>
+								<!-- 3 -->
+								<div class="verification-card inspection">
+									<img
+										class="verification-card__icon"
+										src="./assets/img/verification/inspection.svg"
+										alt="status approved"
+									/>
+									<div class="verification-card__info">
+										<div class="verification-card__title">
+											Подтверждение паспорта
+										</div>
+										<div class="verification-card__status">На проверке</div>
+									</div>
+								</div>
+								<!-- 4 -->
+								<div class="verification-card rejected">
+									<img
+										class="verification-card__icon"
+										src="./assets/img/verification/rejected.svg"
+										alt="status approved"
+									/>
+									<div class="verification-card__info">
+										<div class="verification-card__title">
+											Подтверждение паспорта
+										</div>
+										<div class="verification-card__status">Отклонен</div>
+									</div>
+								</div>
+							</div>
+
+							<button class="btn btn-primary btn-md">pass verification</button>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer class="footer footer_texture">
+				<div class="footer__container container">
+					<div class="footer__item">
+						<div class="footer__contacts">
+							<a href="#" class="logo logo_mobile"
+								><img
+									width="150"
+									height="48"
+									src="./assets/img/mobile-logo.svg"
+									alt="logo"
+							/></a>
+
+							<div>
+								<span>Contacts</span>
+								<a href="mailto:support@paybis.com" class="footer__email"
+									>support@paybis.com</a
+								>
+							</div>
+							<span class="footer__year"
+								>© 2021 GPD Holdings, LLC FinCEN MSB</span
+							>
+							<ul class="footer-social reset-list">
+								<li>
+									<a href="" rel="nofollow" class="footer-social__link">
+										<img
+											width="24"
+											height="24"
+											src="./assets/img/social/instagram.svg"
+											alt="instagram"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="" rel="nofollow" class="footer-social__link">
+										<img
+											width="24"
+											height="24"
+											src="./assets/img/social/facebook.svg"
+											alt="facebook"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="" rel="nofollow" class="footer-social__link">
+										<img
+											width="24"
+											height="24"
+											src="./assets/img/social/twitter.svg"
+											alt="twitter"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="" rel="nofollow" class="footer-social__link">
+										<img
+											width="24"
+											height="24"
+											src="./assets/img/social/youtube.svg"
+											alt="youtube"
+										/>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<ul class="footer-menu reset-list">
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Company</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>About</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Careers</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Press</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>News</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Merch</a
+								>
+							</li>
+						</ul>
+
+						<ul class="footer-menu reset-list">
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Company</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>About</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Careers</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Press</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>News</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Merch</a
+								>
+							</li>
+						</ul>
+
+						<ul class="footer-menu reset-list footer__menu">
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>Privacy Policy and Terms of Service</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>CoinFlip Privacy Policy</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>CoinFlip Biometrics Privacy Policy</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>CoinFlip Financial Privacy Notice</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>CoinFlip Terms of Service</a
+								>
+							</li>
+							<li>
+								<a href="#" class="footer-menu__link border-bottom-line"
+									>CoinFlip Trade Desk Terms of Service</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__text-wrapper">
+						<p class="footer__text">
+							PAYBIS POLAND Sp. z o.o. (0001041711), Hoża 86/210, Warsaw,
+							Poland, 00-682PAYBIS USA LTD (87-1891757), 321 S. Boston, Tulsa,
+							OK, 74103© 2014-2023 Paybis.com, all rights reserved.Investing in
+							cryptoassets
+						</p>
+						<p class="footer__text">
+							involves significant risk. You should not invest more than you can
+							afford to lose, and you should ensure that you fully understand
+							the risks involved. We are not regulated by the Financial Conduct
+							Authority and investments in cryptoassets are not covered by the
+							Financial Ombudsman Service or subject to protection under the
+							Financial Services Compensation Scheme.
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script type="module" src="assets/js/main.js"></script>
+	</body>
+</html>
