@@ -16,6 +16,10 @@
 			gap: 40px;
 		}
 	}
+
+	&__progress {
+		margin-bottom: 50px;
+	}
 }
 
 .auth-card {
@@ -186,6 +190,11 @@
 			button {
 				width: 100%;
 			}
+		}
+	}
+	&_right {
+		button {
+			margin-left: auto;
 		}
 	}
 }
