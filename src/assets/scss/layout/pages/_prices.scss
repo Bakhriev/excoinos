@@ -57,33 +57,64 @@
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 15px 12px;
-}
 
-.categories-btn {
-	padding: 10px 12px;
+	&__btn {
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
 
-	color: #9494b2;
-	font-family: Stolzl;
-	font-size: 15px;
-	font-weight: 400;
-	line-height: 24px;
+		padding: 10px 12px;
 
-	border-radius: 6px;
-	border-radius: 6px;
-	border: 1px solid rgba(255, 255, 255, 0.05);
-	background-color: #181820;
+		color: var(--text-gray);
+		font-family: Stolzl;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 24px;
 
-	transition:
-		background-color 300ms ease-in-out,
-		color 300ms ease-in-out;
+		border-radius: 6px;
+		border: 1px solid rgba(255, 255, 255, 0.05);
+		background-color: var(--bg-gray);
 
-	@include hover {
-		color: #fff;
-		background-color: #40404f;
-	}
+		transition:
+			background-color 300ms ease-in-out,
+			color 300ms ease-in-out;
+		&.active {
+			color: var(--white);
+			border: 1px solid transparent;
+			&::before,
+			&::after {
+				content: '';
+				position: absolute;
+				inset: 0;
+				z-index: -1;
+				transition: opacity 300ms linear;
+			}
 
-	&_filled {
-		border-color: transparent;
-		color: var(--white);
+			&::before {
+				background: var(--purple-gradient);
+			}
+
+			&::after {
+				background: var(--purple-gradient-hover);
+				opacity: 0;
+			}
+
+			@include hover {
+				&::before {
+					opacity: 0;
+				}
+				&::after {
+					opacity: 1;
+				}
+			}
+		}
+
+		@include hover {
+			color: var(--white);
+			background-color: #40404f;
+		}
+		&:active {
+			scale: 0.97;
+		}
 	}
 }

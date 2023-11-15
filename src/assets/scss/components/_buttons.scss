@@ -1,56 +1,118 @@
 .btn {
-	display: inline-block;
-	padding: 0;
-	text-align: center;
-	background-color: transparent;
-	cursor: pointer;
-	font: inherit;
-	border: none;
-	overflow: hidden;
-	user-select: none;
-
-	position: relative;
-	z-index: 1;
-
+	padding: 12px 20px;
 	border-radius: 8px;
+
+	color: var(--white);
+	font-family: Stolzl;
+	font-size: 16px;
+	font-weight: 400;
 
 	&:active {
 		scale: 0.97;
 	}
+
+	&:focus {
+		outline-offset: 2px;
+	}
+
+	@media screen and (max-width: 768px) {
+		padding: 12px;
+	}
+}
+
+.btn-secondary {
+	color: var(--text-gray);
+	background-color: #24242d;
+	transition:
+		background-color 300ms linear,
+		color 300ms linear;
+
+	@include hover {
+		background-color: #40404f;
+		color: var(--white);
+	}
 }
 
 .btn-sm {
-	padding: 12px 16px;
+	border-radius: 6px;
+	padding: 8px 20px;
+
+	@media screen and (max-width: 768px) {
+		padding: 8px 14px;
+	}
 }
 
 .btn-md {
-	padding: 25px 45px;
-}
+	min-width: 200px;
+	padding: 24px 35px;
 
-.btn-lg {
-	padding: 30px 35px;
-}
-
-.btn-primary {
 	color: var(--white);
+	font-family: Gilroy;
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: 0.75px;
+	text-transform: uppercase;
+
+	@media screen and (max-width: 768px) {
+		padding: 22px 35px;
+	}
+	@media screen and (max-width: 500px) {
+		min-width: 100px;
+	}
+}
+
+.btn-border {
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+
+	border: 1px solid var(--white);
+	transition: border 300ms linear;
 
 	&::before {
 		content: '';
 		position: absolute;
-		inset: 0;
 		z-index: -1;
+		inset: 0;
 		background: var(--purple-gradient);
-		transition: opacity 300ms ease-in-out;
+		opacity: 0;
+		transition: opacity 300ms linear;
 	}
 
+	@include hover {
+		border: 1px solid transparent;
+		&::before {
+			opacity: 1;
+		}
+	}
+}
+
+.btn-disabled {
+	opacity: 0.2;
+	pointer-events: none;
+}
+
+.btn-gradient {
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+
+	&::before,
 	&::after {
 		content: '';
 		position: absolute;
 		inset: 0;
 		z-index: -1;
+		transition: opacity 300ms linear;
+	}
+
+	&::before {
+		background: var(--purple-gradient);
+	}
+
+	&::after {
 		background: var(--purple-gradient-hover);
 		opacity: 0;
-		transition: opacity 300ms ease-in-out;
 	}
 
 	@include hover {
@@ -60,18 +122,6 @@
 		&::after {
 			opacity: 1;
 		}
-	}
-}
-
-.btn-secondary {
-	color: #9d9db1;
-	background-color: #24242d;
-	transition:
-		background-color 300ms ease-in-out,
-		color 300ms ease-in-out;
-	@include hover {
-		background-color: #40404f;
-		color: var(--white);
 	}
 }
 
@@ -99,41 +149,6 @@
 	@media screen and (max-width: 768px) {
 		font-size: 16px;
 		padding: 12px 18px;
-	}
-}
-
-.login-btn {
-	position: relative;
-	min-width: 100px;
-	padding: 12px 16px;
-
-	border: 1px solid var(--white);
-	color: var(--white);
-	font-family: Stolzl;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 100%;
-	transition: border-color 300ms ease-in-out;
-
-	&::before {
-		content: '';
-		z-index: -1;
-		position: absolute;
-		inset: 0;
-		background: var(--purple-gradient);
-		opacity: 0;
-		transition: opacity 300ms ease-in-out;
-	}
-
-	&:active {
-		scale: 0.97;
-	}
-
-	@include hover {
-		&::before {
-			opacity: 1;
-		}
-		border-color: transparent;
 	}
 }
 
@@ -182,18 +197,5 @@
 	@media screen and (max-width: 992px) {
 		padding: 22px 35px;
 		font-size: 16px;
-	}
-}
-
-.trade-btn {
-	border-radius: 6px;
-	padding: 8px 24px;
-	color: var(--white);
-	text-align: center;
-	font-family: Stolzl;
-	font-size: 15px;
-	font-weight: 400;
-	@media screen and (max-width: 768px) {
-		padding: 10px 18px;
 	}
 }

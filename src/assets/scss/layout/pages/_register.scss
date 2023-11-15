@@ -30,9 +30,12 @@
 		font-weight: 400;
 
 		@media screen and (max-width: 500px) {
+			font-size: 14px;
 			width: 100%;
 			flex-direction: row;
 			align-items: center;
+			flex-wrap: wrap;
+			gap: 10px 10px;
 			justify-content: flex-end;
 		}
 	}

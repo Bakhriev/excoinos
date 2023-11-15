@@ -26,6 +26,17 @@
 		}
 	}
 
+	&__btn {
+		font-family: Stolzl;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 100%;
+
+		@media screen and (max-width: 768px) {
+			padding: 12px 12px;
+		}
+	}
+
 	// .hero__title
 
 	&__title {
