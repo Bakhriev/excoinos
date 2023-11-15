@@ -3,9 +3,6 @@
 	@media screen and (max-width: 992px) {
 		padding-top: 80px;
 	}
-	// .license__title
-	&__container {
-	}
 
 	&__title {
 		margin-bottom: 42px;
@@ -42,6 +39,7 @@
 		}
 	}
 }
+
 .license-info {
 	display: flex;
 	justify-content: space-between;
@@ -49,6 +47,7 @@
 	align-items: center;
 	gap: 30px 40px;
 }
+
 .license-item {
 	padding-left: 13px;
 	position: relative;

@@ -16,31 +16,31 @@
 @import './components/converter';
 @import './components/crypto-table';
 @import './components/exchange';
-@import './components/lang-dropdown';
+
 @import './components/overlay';
 @import './components/search';
-@import './components/file-input';
 @import './components/progress';
-@import './components/basic-input';
-@import './components/user-dropdown';
 
-// components / checkbox
+@import './components/inputs/file-input';
+@import './components/inputs/basic-input';
+
+@import './components/dropdowns/lang-dropdown';
+@import './components/dropdowns/user-dropdown';
+
 @import './components/checkbox/custom-checkbox';
 
-// components / auths
-@import './components/auths/confirm';
-@import './components/auths/auth';
+// Layout
+@import './layout/auth';
 
-// layout
-@import './layout/currency-cards';
-@import './layout/faq';
-@import './layout/features';
-@import './layout/footer';
-@import './layout/header';
-@import './layout/hero';
-@import './layout/license';
-@import './layout/receive';
-@import './layout/profile';
+// layout Sections
+@import './layout/sections/currency-cards';
+@import './layout/sections/faq';
+@import './layout/sections/features';
+@import './layout/sections/footer';
+@import './layout/sections/header';
+@import './layout/sections/hero';
+@import './layout/sections/license';
+@import './layout/sections/receive';
 
 // Layout / Pages
 
@@ -52,3 +52,4 @@
 @import './layout/pages/register-phone';
 @import './layout/pages/register';
 @import './layout/pages/sign-up-email';
+@import './layout/pages/profile';
