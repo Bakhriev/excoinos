@@ -130,8 +130,8 @@
 							<button class="profile-nav-menu__item">Security</button>
 						</div>
 
-						<!-- Profile Settings Tab -->
-						<div class="profile-settings visually-hidden">
+						<!-- TAB 1 -->
+						<div class="profile-settings">
 							<div class="profile-settings__fields">
 								<div class="user-field">
 									<label class="user-field__label" for="">E-mail</label>
@@ -179,13 +179,11 @@
 									/>
 								</div>
 							</div>
-							<button class="btn btn-primary btn-md profile-settings__btn">
-								Save
-							</button>
+							<button class="btn-gradient btn-md button-reset">Save</button>
 						</div>
 
-						<!-- Verification Tab -->
-						<div class="verification visually-hidden">
+						<!-- TAB 2 -->
+						<div class="verification hide">
 							<div class="verification__cards">
 								<!-- 1 -->
 								<div class="verification-card approved">
@@ -282,11 +280,13 @@
 								</div>
 							</div>
 
-							<button class="btn btn-primary btn-md">pass verification</button>
+							<button class="btn-md btn-gradient button-reset">
+								pass verification
+							</button>
 						</div>
 
-						<!-- Security Tab -->
-						<div class="security">
+						<!-- TAB 3 -->
+						<div class="security hide">
 							<div class="security__top">
 								<div class="user-field security__phone">
 									<label class="user-field__label" for="">Phone</label>
@@ -308,13 +308,13 @@
 								</div>
 
 								<button
-									class="btn auth-card__btn gradient-border login-page__btn text-gradient"
+									class="btn-md gradient-border text-gradient button-reset"
 								>
 									Change phone
 								</button>
 							</div>
 
-							<div class="security__password">
+							<div class="reset-password">
 								<div class="user-field">
 									<label class="user-field__label" for="">Старый пароль </label>
 									<input id="" name="" value="" type="password" class="input" />
@@ -333,7 +333,7 @@
 								</div>
 							</div>
 
-							<button class="btn btn-primary btn-md security__btn">change</button>
+							<button class="btn-gradient btn-md button-reset">change</button>
 						</div>
 					</div>
 				</section>

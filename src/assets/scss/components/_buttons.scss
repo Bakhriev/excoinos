@@ -45,6 +45,7 @@
 .btn-md {
 	min-width: 200px;
 	padding: 24px 35px;
+	border-radius: 8px;
 
 	color: var(--white);
 	font-family: Gilroy;
@@ -53,11 +54,8 @@
 	letter-spacing: 0.75px;
 	text-transform: uppercase;
 
-	@media screen and (max-width: 768px) {
-		padding: 22px 35px;
-	}
-	@media screen and (max-width: 500px) {
-		min-width: 100px;
+	&:active {
+		scale: 0.97;
 	}
 }
 
