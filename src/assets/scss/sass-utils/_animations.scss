@@ -1,0 +1,174 @@
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0, 0.025);
+	}
+	50% {
+		transform: scale(1, 0.025);
+	}
+}
+
+@keyframes move-right {
+	0% {
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+	50% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes move-left {
+	0% {
+		transform: translateX(100px);
+		opacity: 0;
+	}
+	50% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes move-top {
+	0% {
+		transform: translateY(100px);
+		opacity: 0;
+	}
+	50% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes move-bot {
+	0% {
+		transform: translateY(-100px);
+		opacity: 0;
+	}
+	50% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes move-right-scale {
+	0% {
+		transform: translateX(-100px);
+		opacity: 0;
+		scale: 0.7;
+	}
+
+	35% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+
+	100% {
+		scale: 1;
+	}
+}
+
+@keyframes move-left-scale {
+	0% {
+		transform: translateX(100px);
+		opacity: 0;
+		scale: 0.7;
+	}
+
+	35% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+
+	100% {
+		scale: 1;
+	}
+}
+
+@keyframes fade-out {
+	100% {
+		opacity: 0;
+	}
+}
+
+.wipe-enter {
+	animation: wipe-enter 0.7s linear;
+}
+
+.move-left {
+	animation: move-left 0.7s ease-in-out;
+}
+
+.move-right {
+	animation: move-right 0.7s ease-in-out;
+}
+
+.move-top {
+	animation: move-top 0.7s ease-in-out;
+}
+
+.move-bot {
+	animation: move-bot 0.7s ease-in-out;
+}
+
+.move-right-scale {
+	animation: move-right-scale 0.7s ease-in-out;
+}
+
+.move-left-scale {
+	animation: move-left-scale 0.7s ease-in-out;
+}
+
+.fade-out {
+	animation: fade-out 0.5s ease-in-out;
+}
+
+@keyframes light-speed-left {
+	0% {
+		transform: translate3d(100%, 0px, 0px) skewX(-30deg);
+		animation-timing-function: ease-out;
+	}
+
+	60% {
+		transform: skewX(20deg);
+		animation-timing-function: ease-out;
+	}
+
+	80% {
+		transform: skewX(-5deg);
+		animation-timing-function: ease-out;
+	}
+
+	100% {
+		transform: translateZ(0px);
+	}
+}
+
+@keyframes light-speed-right {
+	0% {
+		transform: translate3d(-100%, 0px, 0px) skewX(-30deg);
+		animation-timing-function: ease-out;
+	}
+
+	60% {
+		transform: skewX(20deg);
+		animation-timing-function: ease-out;
+	}
+
+	80% {
+		transform: skewX(-5deg);
+		animation-timing-function: ease-out;
+	}
+
+	100% {
+		transform: translateZ(0px);
+	}
+}
+
+.light-speed-left {
+	animation: 1s linear 0s 1 both light-speed-left;
+}
+
+.light-speed-right {
+	animation: 1s linear 0s 1 both light-speed-right;
+}
