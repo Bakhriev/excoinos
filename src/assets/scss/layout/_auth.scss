@@ -2,18 +2,21 @@
 
 .auth-wrapper {
 	min-height: 100vh;
-	padding: 70px 15px;
+	padding: 70px 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+
+	@media screen and (max-width: 768px) {
+		padding: 20px 0;
+	}
 
 	&__container {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		gap: 90px;
-		padding: 0;
 
 		@media screen and (max-width: 768px) {
 			gap: 40px;
@@ -150,6 +153,7 @@
 		}
 	}
 }
+
 .auth {
 	&__link {
 		margin-left: auto;
@@ -228,7 +232,6 @@
 	}
 }
 
-// Confirm Code Inputs
 .confirm-code-inputs {
 	display: flex;
 	align-items: center;

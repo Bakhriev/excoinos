@@ -8,7 +8,7 @@
 	</head>
 
 	<body>
-		<div class="auth-wrapper">
+		<div class="register-page auth-wrapper">
 			<div class="container auth-wrapper__container">
 				<div class="logo-container">
 					<a href="#" class="logo logo_main"
@@ -27,10 +27,30 @@
 							alt="logo"
 					/></a>
 				</div>
+
 				<div class="auth-card">
-					<div class="auth-card__title signup-email-page__title">Sign up</div>
+					<div class="auth-card__title">Register</div>
+
+					<form action="#">
+						<div class="auth-card__inputs">
+							<input type="email" class="input" placeholder="E-mail" />
+						</div>
+					</form>
+					<div class="register-page__actions">
+						<button class="btn-gradient btn-md button-reset">Continue</button>
+						<div class="register-page__registered">
+							<div>Already registered?</div>
+							<div class="gradient-link">Sign in!</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="auth-card">
+					<div class="auth-card__title">Sign up</div>
 					<div class="auth-card__subtitle">
-						Enter the code sent to <span>+79270503433</span>
+						Enter the code sent to <span>anton_88@mail.ru</span>. Can't find the
+						email? Please check your Spam and other folders, i.e. Promotions,
+						Updates, etc.
 					</div>
 					<form action="#">
 						<div class="confirm-code-inputs mb-25">
@@ -69,6 +89,7 @@
 					<div class="confirm-time confirm-time_position">
 						Resend code in 3:55 seconds
 					</div>
+
 					<div class="auth-buttons auth-buttons_wrap">
 						<button class="go-back-btn">
 							<svg

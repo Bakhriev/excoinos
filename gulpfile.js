@@ -30,6 +30,7 @@ const distPath = 'dist/'
 const path = {
 	build: {
 		html: distPath,
+		pages: distPath,
 		css: distPath + 'assets/css',
 		js: distPath + 'assets/js',
 		img: distPath + 'assets/img',
@@ -40,6 +41,7 @@ const path = {
 	},
 	src: {
 		html: srcPath + '*.html',
+		pages: srcPath + 'pages/**/*.html',
 		css: srcPath + 'assets/scss/**/*.scss',
 		js: srcPath + 'assets/js/*.js',
 		img: srcPath + 'assets/img/**/*.{jpg,jpeg,png,svg}',
@@ -62,6 +64,18 @@ function html() {
 			})
 		)
 		.pipe(dest(path.build.html))
+		.pipe(browserSync.reload({stream: true}))
+}
+
+function pages() {
+	return src(path.src.pages)
+		.pipe(
+			fileinclude({
+				prefix: '@',
+				basepath: '@file',
+			})
+		)
+		.pipe(dest(path.build.pages))
 		.pipe(browserSync.reload({stream: true}))
 }
 
@@ -227,7 +241,7 @@ function prod(done) {
 
 const dev = series(
 	clean,
-	parallel(html, css, js, img, video, webpImg, svg, vendors, fonts),
+	parallel(html, pages, css, js, img, video, webpImg, svg, vendors, fonts),
 	serve
 )
 const build = series(
@@ -235,6 +249,7 @@ const build = series(
 	parallel(
 		prod,
 		htmlMinify,
+		pages,
 		cssMinify,
 		jsMinify,
 		imgMinify,
@@ -251,6 +266,7 @@ const preview = series(serve)
 function watchFiles() {
 	watch([path.src.html], html)
 	watch([srcPath + 'assets/**/*.html'], html)
+	watch([srcPath + 'pages/**/*.html'], pages)
 	watch([path.src.css], css)
 	watch([path.src.js], js)
 	watch([srcPath + 'assets/js/**/*.js'], js)
@@ -265,6 +281,7 @@ function watchFiles() {
 const runParallel = parallel(dev, watchFiles)
 
 exports.html = html
+exports.pages = pages
 exports.css = css
 exports.js = js
 exports.img = img

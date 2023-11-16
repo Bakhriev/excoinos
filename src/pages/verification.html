@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<title>title</title>
+	</head>
+
+	<body>
+		<div class="auth-wrapper">
+			<div class="container auth-wrapper__container">
+				<div class="logo-container">
+					<a href="#" class="logo logo_main"
+						><img
+							width="161"
+							height="24"
+							src="./assets/img/icons/main-logo.svg"
+							alt="logo"
+					/></a>
+
+					<a href="#" class="logo logo_mobile"
+						><img
+							width="150"
+							height="40"
+							src="./assets/img/icons/mobile-logo.svg"
+							alt="logo"
+					/></a>
+				</div>
+
+				<!-- Stage 1 -->
+				<div class="auth-card">
+					<div class="auth-card__title">Stage 1</div>
+					<div class="auth-card__subtitle">
+						Проверка документов клиента - Пользователи должны предоставить
+						сканированные копии личных документов для первоначальной проверки.
+					</div>
+					<div class="auth-card__inputs">
+						<div class="file-upload">
+							<label for="file-upload" class="file-upload__label">
+								<img
+									class="file-upload__img"
+									width="36"
+									height="36"
+									src="./assets/img/icons/file-upload.svg"
+									alt="file upload"
+								/>
+								<span>Upload documents</span>
+							</label>
+							<div class="file-selected">
+								<div class="file-selected__selected"></div>
+								<button class="file-selected__clear">
+									<img
+										width="25"
+										height="25"
+										src="./assets/img/icons/file-clear.svg"
+										alt="clear file"
+										class="file-selected__img"
+									/>
+								</button>
+							</div>
+
+							<input type="file" name="" id="file-upload" />
+						</div>
+					</div>
+
+					<div
+						class="progress-element progress-element--html auth-wrapper__progress"
+					>
+						<div class="progress-container">
+							<progress max="100" value="95">95%</progress>
+						</div>
+						<p class="progress-label"></p>
+					</div>
+
+					<div class="auth-buttons auth-buttons_wrap auth-buttons_right">
+						<button class="btn-gradient btn-md button-reset">Continue</button>
+					</div>
+				</div>
+				<!-- Stage 2 -->
+				<div class="auth-card">
+					<div class="auth-card__title">Stage 2</div>
+					<div class="auth-card__subtitle">
+						Селфи с документами клиента - Пользователи должны предоставить
+						фотографии себя, держащими действующие документы, и сравнить их с
+						предоставленными копиями
+					</div>
+					<div class="auth-card__inputs">
+						<div class="file-upload">
+							<label for="file-upload" class="file-upload__label">
+								<img
+									width="31"
+									height="31"
+									src="./assets/img/icons/camera-upload.svg"
+									alt="upload camera"
+								/>
+								<span>Upload photo</span>
+							</label>
+							<div class="file-selected">
+								<div class="file-selected__selected"></div>
+								<button class="file-selected__clear">
+									<img
+										width="25"
+										height="25"
+										src="./assets/img/icons/file-clear.svg"
+										alt="clear file"
+										class="file-selected__img"
+									/>
+								</button>
+							</div>
+
+							<input type="file" name="" id="file-upload" capture="user" />
+						</div>
+						<!--  -->
+
+						<!--  -->
+					</div>
+				</div>
+
+				<!-- Stage 3 -->
+				<div class="auth-card">
+					<div class="auth-card__title">Stage 3</div>
+					<div class="auth-card__subtitle">
+						Предоставление документа о оплате коммунальных услуг или выписки с
+						банка о платежах - Пользователи должны предоставить документ,
+						подтверждающий источник средств, например, выписку о платежах за
+						коммунальные услуги или банковский чек.
+					</div>
+					<div class="auth-card__inputs">
+						<div class="file-upload">
+							<label for="file-upload" class="file-upload__label">
+								<img
+									class="file-upload__img"
+									width="36"
+									height="36"
+									src="./assets/img/icons/file-upload.svg"
+									alt="file upload"
+								/>
+								<span>Upload documents</span>
+							</label>
+							<div class="file-selected">
+								<div class="file-selected__selected"></div>
+								<button class="file-selected__clear">
+									<img
+										width="25"
+										height="25"
+										src="./assets/img/icons/file-clear.svg"
+										alt="clear file"
+										class="file-selected__img"
+									/>
+								</button>
+							</div>
+
+							<input type="file" name="" id="file-upload" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="module" src="assets/js/main.js"></script>
+	</body>
+</html>
