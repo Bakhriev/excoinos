@@ -91,7 +91,7 @@
 
 	&__type {
 		margin-bottom: 8px;
-		color: #9494b2;
+		color: var(--text-gray-100);
 		font-family: Stolzl;
 		font-size: 13px;
 		font-weight: 400;
@@ -104,7 +104,7 @@
 	// .currency-card__value
 
 	&__value {
-		color: #fff;
+		color: var(--white);
 		font-family: Stolzl;
 		font-size: 14px;
 		font-style: normal;
@@ -134,7 +134,7 @@
 	// .currency-card__time
 
 	&__time {
-		color: #9494b2;
+		color: var(--text-gray-100);
 		font-family: Stolzl;
 		font-size: 13px;
 		font-weight: 400;

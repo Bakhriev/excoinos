@@ -1,18 +1,21 @@
 :root {
-	--breakpoint-large: 1200px;
-	--breakpoint-medium: 992px;
-	--breakpoint-small: 768px;
 	--overlay-index: 10;
 	--mobile-menu-index: 20;
-	--app-bg: #0b0b0f;
 	--white: #fff;
-	--gray-100: #ebebeb;
-	--text-black: #222;
+
+	--app-bg: #0b0b0f;
 	--bg-black: #0d0e1a;
-	--green: #2dca73;
+	--bg-black-100: #111117;
+	--bg-gray-100: #2f2f3e;
+	--bg-gray-200: #4b4b62;
 	--bg-gray: #181820;
 
+	--green: #2dca73;
+	--border-gray: #262636;
+	--text-black: #222;
 	--text-gray: #9d9db1;
+	--text-gray-100: #9494b2;
+	--gray-100: #ebebeb;
 
 	--purple-gradient: linear-gradient(
 		90deg,
@@ -27,6 +30,3 @@
 }
 
 // Colors
-$breakpoint-large: 1200px;
-$breakpoint-medium: 992px;
-$breakpoint-small: 768px;

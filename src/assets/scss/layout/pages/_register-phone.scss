@@ -17,7 +17,7 @@
 	}
 
 	&__label {
-		color: #fff;
+		color: var(--white);
 		font-family: Stolzl;
 		font-size: 14px;
 		font-weight: 400;
@@ -41,7 +41,7 @@
 	padding: 22px 20px;
 	border-radius: 8px;
 	border: 1px solid #676789;
-	background: #181820;
+	background-color: var(--bg-gray);
 
 	display: flex;
 	align-items: center;
@@ -78,7 +78,7 @@
 	// .phone-input__num
 
 	&__num {
-		color: #fff;
+		color: var(--white);
 		font-family: Stolzl;
 		font-size: 16px;
 		font-weight: 400;
@@ -95,7 +95,7 @@
 		width: 100%;
 		height: 100%;
 
-		color: #fff;
+		color: var(--white);
 		font-family: Stolzl;
 		font-size: 16px;
 		font-weight: 400;

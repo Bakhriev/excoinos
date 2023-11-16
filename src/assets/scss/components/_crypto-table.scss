@@ -7,7 +7,7 @@
 	// Reset End
 
 	width: 100%;
-	color: #fff;
+	color: var(--white);
 
 	color: var(--white);
 	font-family: Stolzl;
@@ -187,13 +187,13 @@
 .table-change {
 	svg {
 		display: none;
-		fill: #2dca73;
+		fill: var(--green);
 		margin-right: 5px;
 	}
 }
 
 .table-change_positive {
-	color: #2dca73;
+	color: var(--green);
 
 	@media screen and (max-width: 600px) {
 		svg {
@@ -214,4 +214,3 @@
 		}
 	}
 }
-

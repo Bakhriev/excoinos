@@ -1,25 +1,25 @@
-// import {burgerMenu} from './functions/burger'
+import {burgerMenu} from './functions/burger'
 
-// burgerMenu()
-// const langDrop = document.querySelector('.lang-drop')
-// langDrop.addEventListener('click', () => langDrop.classList.toggle('active'))
+burgerMenu()
+const langDrop = document.querySelector('.lang-drop')
+langDrop.addEventListener('click', () => langDrop.classList.toggle('active'))
 
-// const converters = document.querySelectorAll('.converter')
+const converters = document.querySelectorAll('.converter')
 
-// converters.forEach(converter => {
-// 	const convertersSelect = converter.querySelector('.converter-select')
-// 	convertersSelect.addEventListener('click', () =>
-// 		converter.classList.toggle('active')
-// 	)
-// })
+converters.forEach(converter => {
+	const convertersSelect = converter.querySelector('.converter-select')
+	convertersSelect.addEventListener('click', () =>
+		converter.classList.toggle('active')
+	)
+})
 
-// const accordions = document.querySelectorAll('.accordion')
+const accordions = document.querySelectorAll('.accordion')
 
-// accordions.forEach(accordion => {
-// 	accordion.addEventListener('click', () =>
-// 		accordion.classList.toggle('active')
-// 	)
-// })
+accordions.forEach(accordion => {
+	accordion.addEventListener('click', () =>
+		accordion.classList.toggle('active')
+	)
+})
 
 const input = document.querySelector('#file-upload')
 const selected = document.querySelector('.file-selected__selected')

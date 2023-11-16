@@ -51,7 +51,7 @@
 	overflow: hidden;
 
 	border-radius: 10px;
-	border: 0.5px solid #262636;
+	border: 0.5px solid var(--border-gray);
 	background-color: var(--app-bg);
 	transition:
 		opacity 120ms ease,
@@ -84,7 +84,7 @@
 
 		@include hover {
 			background-color: #15151c;
-			border-color: #262636;
+			border-color: var(--border-gray);
 		}
 	}
 }

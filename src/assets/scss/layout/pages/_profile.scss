@@ -12,7 +12,7 @@
 
 	&__title {
 		margin-bottom: 30px;
-		color: #fff;
+		color: var(--white);
 		font-family: Stolzl;
 		font-size: 24px;
 		font-weight: 400;
@@ -162,7 +162,7 @@
 	gap: 14px;
 	border-radius: 8px;
 	border: 1px solid #2f2f3e;
-	background: #111117;
+	background-color: var(--bg-black-100);
 	padding: 20px 25px;
 
 	@media screen and (max-width: 500px) {

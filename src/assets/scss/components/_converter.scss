@@ -15,7 +15,7 @@
 
 	border-radius: 10px;
 	border: 1px solid #2e2e3e;
-	background: #181820;
+	background: var(--bg-gray);
 
 	@media screen and (max-width: 992px) {
 		border-radius: 8px;
@@ -62,7 +62,7 @@
 
 	border-radius: 10px;
 
-	background: #0b0b0f;
+	background-color: var(--app-bg);
 	cursor: pointer;
 
 	@media screen and (max-width: 992px) {
@@ -102,7 +102,7 @@
 }
 
 .converter-type {
-	color: #9d9dad;
+	color: var(--text-gray);
 	font-family: Stolzl;
 	font-size: 14px;
 	font-weight: 500;
@@ -141,15 +141,15 @@
 	min-width: 200px;
 
 	border-radius: 10px;
-	border: 0.5px solid #262636;
-	background: #0b0b0f;
+	border: 0.5px solid var(--border-gray);
+	background-color: var(--app-bg);
 	// .converter-drop__top
 
 	&__top {
 		padding: 20px;
 		display: flex;
 		flex-direction: column;
-		border-bottom: 1px solid #262636;
+		border-bottom: 1px solid var(--border-gray);
 	}
 
 	// .converter-drop__actions
@@ -186,7 +186,7 @@
 	// .converter-drop__text
 
 	&__text {
-		color: #9494b2;
+		color: var(--text-gray);
 		font-family: Stolzl;
 		font-size: 14px;
 		font-style: normal;
@@ -216,7 +216,7 @@
 		transition: 120ms ease;
 
 		&:not(:last-child) {
-			border-bottom: 1px solid #262636;
+			border-bottom: 1px solid var(--border-gray);
 		}
 
 		@include hover {
@@ -235,7 +235,7 @@
 	// .converter-menu__type
 
 	&__type {
-		color: #ebebeb;
+		color: var(--gray-100);
 		font-family: Stolzl;
 		font-size: 16px;
 		font-weight: 500;
@@ -245,7 +245,7 @@
 	// .converter-menu__rate
 
 	&__rate {
-		color: #9494b2;
+		color: var(--text-gray);
 		font-family: Stolzl;
 		font-size: 14px;
 		font-weight: 400;

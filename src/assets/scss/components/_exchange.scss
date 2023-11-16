@@ -80,7 +80,7 @@
 	// .exchange__text
 
 	&__text {
-		color: #9494b2;
+		color: var(--text-gray-100);
 		font-family: Stolzl;
 		font-size: 16px;
 		font-weight: 400;
@@ -91,7 +91,7 @@
 	// .exchange-block__title
 
 	&__title {
-		color: #9494b2;
+		color: var(--text-gray-100);
 		font-family: Stolzl;
 		font-size: 16px;
 		font-weight: 400;

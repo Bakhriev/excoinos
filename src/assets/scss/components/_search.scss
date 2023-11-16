@@ -22,7 +22,7 @@
 		font-weight: 400;
 		line-height: normal;
 		&::placeholder {
-			color: #9494b2;
+			color: var(--text-gray-100);
 		}
 	}
 

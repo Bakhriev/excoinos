@@ -14,7 +14,7 @@
 // 36
 .breadcrumbs-item {
 	width: max-content;
-	color: #4b4b62;
+	color: var(--bg-gray-200);
 	font-family: Stolzl;
 	font-size: 16px;
 	font-weight: 400;
@@ -30,7 +30,7 @@
 			width: 6px;
 			height: 6px;
 			border-radius: 50%;
-			background-color: #4b4b62;
+			background-color: var(--bg-gray-200);
 			@media screen and (max-width: 768px) {
 				right: -18px;
 			}

@@ -10,26 +10,23 @@
 @import './sass-utils/global';
 
 // components
+@import './components/basic-input';
+@import './components/basic-select';
 @import './components/breadcrumbs';
 @import './components/burger';
 @import './components/buttons';
 @import './components/converter';
 @import './components/crypto-table';
+@import './components/custom-checkbox';
+
 @import './components/exchange';
-@import './components/basic-select';
+@import './components/file-input';
+@import './components/lang-dropdown';
 @import './components/notification';
-
 @import './components/overlay';
-@import './components/search';
 @import './components/progress';
-
-@import './components/inputs/file-input';
-@import './components/inputs/basic-input';
-
-@import './components/dropdowns/lang-dropdown';
-@import './components/dropdowns/user-dropdown';
-
-@import './components/checkbox/custom-checkbox';
+@import './components/search';
+@import './components/user-dropdown';
 
 // Layout
 @import './layout/auth';
@@ -51,7 +48,6 @@
 @import './layout/pages/profile';
 @import './layout/pages/prices';
 
-@import './layout/pages/login';
 @import './layout/pages/create-password';
 
 @import './layout/pages/register-phone';
