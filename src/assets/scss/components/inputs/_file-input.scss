@@ -39,6 +39,11 @@
 			line-height: 140%; /* 22.4px */
 		}
 	}
+
+	&__img {
+		width: 36px;
+		height: 36px;
+	}
 }
 
 .file-selected {
@@ -64,5 +69,9 @@
 		&.active {
 			display: block;
 		}
+	}
+	&__img {
+		width: 25px;
+		height: 25px;
 	}
 }

@@ -29,7 +29,7 @@
 			width: 1442px;
 			height: 526px;
 
-			background-image: url('../img/textures/footer-texture.png');
+			background-image: url('../img/footer-texture.png');
 			background-position: center center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -139,7 +139,9 @@
 	// .footer-social__link
 
 	&__link {
-		display: block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		width: 24px;
 		height: 24px;
 	}

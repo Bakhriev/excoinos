@@ -79,7 +79,7 @@
 				width: 100%;
 				height: 1px;
 
-				background-image: url('../img/features/horizontal-line.svg');
+				background-image: url('../img/icons/horizontal-line.svg');
 			}
 		}
 
@@ -98,7 +98,7 @@
 			width: 1px;
 			height: 100%;
 
-			background-image: url('../img/features/vertical-line.svg');
+			background-image: url('../img/icons/vertical-line.svg');
 		}
 
 		@media screen and (max-width: 992px) {
@@ -130,7 +130,7 @@
 			rgba(218, 74, 76, 0) 27.86%
 		),
 		linear-gradient(267deg, #14141b 40.67%, rgba(20, 20, 27, 0) 99.81%),
-		url('../img/features/decor.png');
+		url('../img/decor.png');
 
 	@media screen and (max-width: 992px) {
 		padding: 20px;

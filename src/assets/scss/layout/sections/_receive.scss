@@ -110,25 +110,9 @@
 		cursor: pointer;
 		width: 16px;
 		height: 16px;
-		background-image: url('../img/email-arrow.svg');
+		background-image: url('../img/icons/email-arrow.svg');
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
-	}
-}
-
-.custom-scroll {
-	&::-webkit-scrollbar-track {
-		border-radius: 4px;
-		background-color: #2f2f3e;
-	}
-	&::-webkit-scrollbar {
-		width: 3px;
-		background-color: #111117;
-	}
-
-	&::-webkit-scrollbar-thumb {
-		border-radius: 4px;
-		background-color: #f5f5f5;
 	}
 }
