@@ -5,12 +5,14 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 		gap: 20px 0px;
+
 		button {
 			max-width: 200px;
 		}
 
 		@media screen and (max-width: 500px) {
 			flex-direction: column-reverse;
+
 			button {
 				max-width: 100%;
 				width: 100%;

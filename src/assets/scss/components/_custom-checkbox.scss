@@ -1,3 +1,7 @@
+.custom-checkbox {
+	display: none;
+}
+
 .custom-checkbox-container {
 	flex-shrink: 0;
 	position: relative;
@@ -24,15 +28,9 @@
 			@include center;
 			width: 9px;
 			height: 9px;
-
 			background: url('../img/icons/checkmark.svg') no-repeat center/cover;
 		}
 	}
-}
-
-.custom-checkbox {
-	display: none;
-	// .custom-checkbox__checkmark
 }
 
 .custom-checkbox:checked ~ .custom-checkbox-container__checkmark {

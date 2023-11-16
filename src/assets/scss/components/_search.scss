@@ -1,26 +1,21 @@
 .search {
 	position: relative;
-	// .search__field
 
 	&__field {
-		background-color: transparent;
-		padding: 0;
-		border: none;
-
 		display: block;
-		padding: 15px 50px 15px 20px;
 		width: 100%;
 		height: 100%;
-
+		padding: 15px 20px;
 		border-radius: 6px;
 		border: 1px solid #2e2e3e;
 		background: #181820;
-
 		color: var(--white);
 		font-family: Stolzl;
 		font-size: 14px;
 		font-weight: 400;
 		line-height: normal;
+		background-color: transparent;
+
 		&::placeholder {
 			color: var(--text-gray-100);
 		}
@@ -33,6 +28,7 @@
 		transform: translateY(-50%);
 	}
 }
+
 .search-icon {
 	width: 20px;
 	height: 20px;

@@ -1,21 +1,16 @@
 .exchange {
 	margin: 0 auto;
-
 	max-width: 1040px;
 	width: 100%;
 	padding: 40px;
-
 	border: 0.5px solid #32324a;
 	border-radius: 30px;
-
 	background-color: rgba(20, 20, 27, 0.6);
 
 	@media screen and (max-width: 992px) {
 		border-radius: 20px;
 		padding: 20px;
 	}
-
-	// .exchange__top
 
 	&__top {
 		display: flex;
@@ -24,12 +19,9 @@
 			flex-direction: column;
 			align-items: normal;
 		}
-
 		margin-bottom: 17px;
 		gap: 15px 16px;
 	}
-
-	// .exchange__bottom
 
 	&__bottom {
 		display: flex;
@@ -58,8 +50,6 @@
 		}
 	}
 
-	// .exchange__info
-
 	&__info {
 		display: flex;
 		flex-direction: column;
@@ -77,8 +67,6 @@
 		}
 	}
 
-	// .exchange__text
-
 	&__text {
 		color: var(--text-gray-100);
 		font-family: Stolzl;
@@ -87,19 +75,16 @@
 	}
 }
 
-.exchange-block {
-	// .exchange-block__title
+.exchange-block__title {
+	color: var(--text-gray-100);
+	font-family: Stolzl;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 15px;
 
-	&__title {
-		color: var(--text-gray-100);
-		font-family: Stolzl;
-		font-size: 16px;
-		font-weight: 400;
-		margin-bottom: 15px;
-		@media screen and (max-width: 992px) {
-			margin-bottom: 5px;
-			font-size: 14px;
-		}
+	@media screen and (max-width: 992px) {
+		margin-bottom: 5px;
+		font-size: 14px;
 	}
 }
 
@@ -121,14 +106,10 @@
 	font-size: 14px;
 	font-weight: 500;
 
-	// .exchange-detail__type
-
 	&__type {
 		margin-bottom: 4px;
 		font-weight: 400;
 	}
-
-	// .exchange-detail__number
 
 	&__number {
 		font-weight: 500;

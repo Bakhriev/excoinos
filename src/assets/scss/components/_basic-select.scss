@@ -1,8 +1,6 @@
 .basic-select {
 	position: relative;
-
 	display: flex;
-
 	border-radius: 8px;
 	border: 1px solid var(--bg-gray-100);
 	background-color: var(--bg-gray);
@@ -15,13 +13,11 @@
 	}
 
 	&__toggle {
-		overflow: hidden;
-		padding: 25px;
-
 		display: flex;
 		justify-content: space-between;
 		gap: 20px;
-
+		overflow: hidden;
+		padding: 25px;
 		width: 100%;
 
 		@media screen and (max-width: 500px) {
@@ -30,12 +26,12 @@
 	}
 
 	&__selected {
+		overflow: hidden;
+		white-space: nowrap;
 		color: var(--white);
 		font-family: Stolzl;
 		font-size: 16px;
 		font-weight: 400;
-		white-space: nowrap;
-		overflow: hidden;
 	}
 
 	&__icon {
@@ -51,17 +47,14 @@
 		width: 100%;
 		max-height: 260px;
 		overflow-y: auto;
-
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 5px;
 		padding: 2px;
-
 		border-radius: 8px;
 		border: 1px solid var(--bg-gray-100);
 		background-color: var(--bg-black-100);
-
 		opacity: 0;
 		visibility: hidden;
 		transition:
@@ -80,6 +73,7 @@
 		font-weight: 400;
 		background-color: var(--bg-black-100);
 		border-radius: 4px;
+
 		@include hover {
 			background-color: var(--bg-gray-100);
 		}

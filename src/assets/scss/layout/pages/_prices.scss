@@ -1,31 +1,35 @@
 .prices {
 	padding-top: 84px;
+
 	@media screen and (max-width: 992px) {
 		padding-top: 26px;
 	}
-	// .prices__title
+
 	&__breadcrumbs {
 		margin-bottom: 18px;
 		justify-content: center;
+
 		@media screen and (max-width: 992px) {
+			margin-bottom: 13px;
 		}
-		margin-bottom: 13px;
 	}
+
 	&__title {
 		margin-bottom: 22px;
 
 		@media screen and (max-width: 992px) {
 			margin-bottom: 16px;
 		}
+
 		@media screen and (max-width: 768px) {
 		}
 	}
 
 	&__categories {
-		margin-bottom: 20px;
-		max-width: 750px;
 		margin: 0 auto;
 		margin-bottom: 20px;
+		max-width: 750px;
+
 		@media screen and (max-width: 768px) {
 			display: none;
 		}
@@ -34,8 +38,8 @@
 	&__search {
 		max-width: 750px;
 		margin: 0 auto;
-
 		margin-bottom: 30px;
+
 		@media screen and (max-width: 992px) {
 			margin-bottom: 35px;
 		}
@@ -62,7 +66,6 @@
 		position: relative;
 		z-index: 1;
 		overflow: hidden;
-
 		padding: 10px 12px;
 
 		color: var(--text-gray);
@@ -78,9 +81,11 @@
 		transition:
 			background-color 300ms ease-in-out,
 			color 300ms ease-in-out;
+
 		&.active {
 			color: var(--white);
 			border: 1px solid transparent;
+
 			&::before,
 			&::after {
 				content: '';
@@ -103,6 +108,7 @@
 				&::before {
 					opacity: 0;
 				}
+
 				&::after {
 					opacity: 1;
 				}
@@ -113,6 +119,7 @@
 			color: var(--white);
 			background-color: #40404f;
 		}
+
 		&:active {
 			scale: 0.97;
 		}

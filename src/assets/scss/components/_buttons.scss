@@ -7,16 +7,16 @@
 	font-size: 16px;
 	font-weight: 400;
 
+	@media screen and (max-width: 768px) {
+		padding: 12px;
+	}
+
 	&:active {
 		scale: 0.97;
 	}
 
 	&:focus {
 		outline-offset: 2px;
-	}
-
-	@media screen and (max-width: 768px) {
-		padding: 12px;
 	}
 }
 
@@ -127,12 +127,11 @@
 	}
 }
 
-.crypto-btn {
+.crypto-btn,
+.sell-btn,
+.by-now-btn {
 	color: var(--white);
-	text-align: center;
 	font-family: Stolzl;
-	font-size: 18px;
-	font-weight: 700;
 	line-height: 100%;
 
 	@media screen and (max-width: 768px) {
@@ -141,12 +140,19 @@
 	}
 }
 
-.sell-btn {
-	color: var(--text-gray);
-	font-family: Stolzl;
+.crypto-btn {
 	font-size: 18px;
 	font-weight: 700;
-	line-height: 100%;
+
+	@media screen and (max-width: 768px) {
+		font-size: 16px;
+	}
+}
+
+.sell-btn,
+.btn-close {
+	font-size: 18px;
+	font-weight: 700;
 
 	@media screen and (max-width: 768px) {
 		font-size: 16px;
@@ -188,12 +194,9 @@
 }
 
 .by-now-btn {
-	color: var(--white);
 	text-align: center;
-	font-family: Stolzl;
 	font-size: 20px;
 	font-weight: 700;
-	line-height: 100%;
 	text-transform: uppercase;
 
 	@media screen and (max-width: 992px) {

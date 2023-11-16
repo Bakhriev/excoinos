@@ -2,6 +2,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 25px;
+
 	input {
 		display: none;
 	}
@@ -22,8 +23,6 @@
 			height: 76px;
 		}
 
-		//
-		//
 		span {
 			background: var(
 				--cx,
@@ -66,10 +65,12 @@
 		background-color: transparent;
 		display: none;
 		cursor: pointer;
+
 		&.active {
 			display: block;
 		}
 	}
+
 	&__img {
 		width: 25px;
 		height: 25px;

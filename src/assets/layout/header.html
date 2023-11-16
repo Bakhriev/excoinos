@@ -18,31 +18,37 @@
 			/></a>
 		</div>
 		<div class="mobile-menu">
-			<button
-				class="btn-close mobile-menu__close"
-				aria-label="click to close menu"
-			></button>
-			<nav>
-				<ul class="menu">
-					<li>
-						<a href="#" class="menu__link border-bottom-line">Buy / Sell</a>
-					</li>
-					<li>
-						<a href="#" class="menu__link border-bottom-line">Crypto Prices</a>
-					</li>
-					<li>
-						<a href="#" class="menu__link border-bottom-line">Documentation</a>
-					</li>
-					<li>
-						<a href="#" class="menu__link border-bottom-line">Contact</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="header__actions">
-				@include('./components/lang-dropdown.html')
-				<div class="header__buttons">
-					<button class="btn btn-border button-reset">Log in</button>
-					<button class="btn btn-gradient button-reset">Sign up</button>
+			<div class="mobile-menu__content">
+				<button
+					class="btn-close mobile-menu__close"
+					aria-label="click to close menu"
+				></button>
+				<nav>
+					<ul class="menu">
+						<li>
+							<a href="#" class="menu__link border-bottom-line">Buy / Sell</a>
+						</li>
+						<li>
+							<a href="#" class="menu__link border-bottom-line"
+								>Crypto Prices</a
+							>
+						</li>
+						<li>
+							<a href="#" class="menu__link border-bottom-line"
+								>Documentation</a
+							>
+						</li>
+						<li>
+							<a href="#" class="menu__link border-bottom-line">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__actions">
+					@include('./components/lang-dropdown.html')
+					<div class="header__buttons">
+						<button class="btn btn-border button-reset">Log in</button>
+						<button class="btn btn-gradient button-reset">Sign up</button>
+					</div>
 				</div>
 			</div>
 		</div>

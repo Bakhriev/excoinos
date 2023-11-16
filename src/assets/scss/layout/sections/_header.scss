@@ -55,10 +55,6 @@
 		transform: translateX(0);
 	}
 
-	@media screen and (max-width: 1200px) {
-		gap: 40px 50px;
-	}
-
 	&__close {
 		display: none;
 
@@ -67,7 +63,20 @@
 			margin-left: auto;
 		}
 	}
+	&__content {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 40px 105px;
 
+		@media screen and (max-width: 1200px) {
+			gap: 40px 50px;
+		}
+
+		@media screen and (max-width: 1160px) {
+			flex-direction: column;
+		}
+	}
 	// Mobile Menu Styles
 	@media screen and (max-width: 1160px) {
 		display: flex;
@@ -76,6 +85,7 @@
 		position: fixed;
 		right: 0;
 		top: 0;
+		bottom: 0;
 
 		max-width: 320px;
 		min-width: 300px;

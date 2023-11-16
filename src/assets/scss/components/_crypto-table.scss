@@ -1,14 +1,5 @@
 .table {
-	td,
-	th {
-		padding: 0;
-	}
-	border-collapse: collapse;
-	// Reset End
-
 	width: 100%;
-	color: var(--white);
-
 	color: var(--white);
 	font-family: Stolzl;
 	font-size: 16px;
@@ -18,27 +9,31 @@
 		font-size: 14px;
 	}
 
+	th,
+	td {
+		padding: 0;
+	}
+
+	border-collapse: collapse;
+
 	&__grid {
 		display: grid;
 		grid-template-columns:
 			minmax(50px, 60px) minmax(240px, 1fr) minmax(100px, 200px)
 			minmax(60px, 170px) minmax(100px, 220px) minmax(100px, 100px);
 
-		// 992
 		@media screen and (max-width: 992px) {
 			grid-template-columns:
 				minmax(50px, 60px) minmax(180px, 1fr) minmax(100px, 200px)
 				minmax(60px, 170px) minmax(100px, 220px) minmax(100px, 100px);
 		}
 
-		// 768
 		@media screen and (max-width: 768px) {
 			grid-template-columns:
 				minmax(50px, 60px) minmax(160px, 1fr) minmax(100px, 200px)
 				minmax(60px, 170px) minmax(70px, 100px);
 		}
 
-		// 600
 		@media screen and (max-width: 600px) {
 			grid-template-columns: 1fr 100px;
 		}
@@ -46,7 +41,6 @@
 
 	&__thead-row {
 		padding: 22px 0;
-
 		border-radius: 4px 4px 0px 0px;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 		background: rgba(24, 24, 32, 0.8);
@@ -207,9 +201,7 @@
 	@media screen and (max-width: 600px) {
 		svg {
 			display: block;
-
 			transform: rotate(90deg);
-
 			fill: #ff274e;
 		}
 	}

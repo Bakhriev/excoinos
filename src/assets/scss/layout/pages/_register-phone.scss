@@ -4,6 +4,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
+
 		@media screen and (max-width: 992px) {
 			gap: 15px;
 			margin-bottom: 25px;
@@ -30,6 +31,7 @@
 	&__buttons {
 		@media screen and (max-width: 400px) {
 			flex-wrap: wrap;
+
 			button {
 				width: 100%;
 			}
@@ -47,8 +49,6 @@
 	align-items: center;
 	gap: 25px;
 
-	// .phone-input__country
-
 	&__country {
 		display: flex;
 		align-items: center;
@@ -56,6 +56,7 @@
 		padding-right: 16px;
 
 		position: relative;
+
 		&::after {
 			content: '';
 			position: absolute;
@@ -68,14 +69,10 @@
 		}
 	}
 
-	// .phone-input__img
-
 	&__img {
 		width: 25px;
 		height: 20px;
 	}
-
-	// .phone-input__num
 
 	&__num {
 		color: var(--white);
@@ -83,8 +80,6 @@
 		font-size: 16px;
 		font-weight: 400;
 	}
-
-	// .phone-input__field
 
 	&__field {
 		background-color: transparent;

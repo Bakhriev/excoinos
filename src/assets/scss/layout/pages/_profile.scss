@@ -1,14 +1,11 @@
 .profile {
 	padding-top: 50px;
 	padding-bottom: 55px;
-	// .profile__container
 
 	&__container {
 		display: flex;
 		flex-direction: column;
 	}
-
-	// .profile__title
 
 	&__title {
 		margin-bottom: 30px;
@@ -21,6 +18,7 @@
 
 	&__menu {
 		margin-bottom: 60px;
+
 		@media screen and (max-width: 768px) {
 			margin-bottom: 30px;
 		}
@@ -34,10 +32,10 @@
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 20px 60px;
+
 	@media screen and (max-width: 768px) {
 		gap: 20px 20px;
 	}
-	// .profile-nav__item
 
 	&__item {
 		padding: 0;
@@ -45,14 +43,14 @@
 		cursor: pointer;
 		user-select: none;
 		border: none;
-
 		color: #73737d;
-
 		font-family: Stolzl;
 		font-size: 18px;
+
 		@media screen and (max-width: 992px) {
 			font-size: 15px;
 		}
+
 		font-style: normal;
 		font-weight: 400;
 		line-height: 30px;
@@ -80,17 +78,15 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 20px;
+
 	@media screen and (max-width: 600px) {
 		grid-template-columns: 1fr;
 	}
 }
 
 .profile-settings {
-	// .profile-settings__fields
-
 	&__fields {
 		margin-bottom: 30px;
-
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 20px;
@@ -102,6 +98,7 @@
 		.user-field {
 			&:last-child {
 				grid-column: 2 span;
+
 				@media screen and (max-width: 768px) {
 					grid-column: auto;
 				}
@@ -109,11 +106,10 @@
 		}
 	}
 
-	// .profile-settings__btn
-
 	&__btn {
 		width: 200px;
 		text-transform: uppercase;
+
 		@media screen and (max-width: 768px) {
 			width: 100%;
 		}
@@ -121,15 +117,15 @@
 }
 
 .security {
-	// .security__top
-
 	&__top {
 		margin-bottom: 40px;
 		display: flex;
 		gap: 25px;
 		align-items: flex-end;
+
 		@media screen and (max-width: 600px) {
 			flex-direction: column;
+
 			button {
 				width: 100%;
 			}
@@ -139,6 +135,7 @@
 	&__phone {
 		max-width: 460px;
 		width: 100%;
+
 		@media screen and (max-width: 600px) {
 			max-width: 100%;
 		}
@@ -190,26 +187,21 @@
 		}
 	}
 
-	// .verification-card__icon
-
 	&__icon {
 		width: 54px;
 		height: 54px;
+
 		@media screen and (max-width: 500px) {
 			width: 34px;
 			height: 34px;
 		}
 	}
 
-	// .verification-card__info
-
 	&__info {
 		display: flex;
 		flex-direction: column;
 		gap: 12px;
 	}
-
-	// .verification-card__title
 
 	&__title {
 		color: var(--white);
@@ -222,13 +214,12 @@
 		}
 	}
 
-	// .verification-card__status
-
 	&__status {
 		color: #7c7c97;
 		font-family: Stolzl;
 		font-size: 16px;
 		font-weight: 400;
+
 		@media screen and (max-width: 500px) {
 			font-size: 14px;
 		}
@@ -254,21 +245,22 @@
 	border: none;
 	user-select: none;
 	cursor: pointer;
-
 	display: flex;
 	align-items: center;
 	gap: 10px;
-
 	font-family: Stolzl;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 30px;
+
 	&:active {
 		scale: 0.97;
 	}
+
 	svg {
 		transition: transform 120ms ease-in-out;
 	}
+
 	@include hover {
 		svg {
 			transform: translateX(5px);
@@ -279,6 +271,7 @@
 .start-color {
 	stop-color: #393949;
 }
+
 .stop-color {
 	stop-color: #393949;
 }
