@@ -116,3 +116,19 @@
 		background-repeat: no-repeat;
 	}
 }
+
+.custom-scroll {
+	&::-webkit-scrollbar-track {
+		border-radius: 4px;
+		background-color: #2f2f3e;
+	}
+	&::-webkit-scrollbar {
+		width: 3px;
+		background-color: #111117;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 4px;
+		background-color: #f5f5f5;
+	}
+}
