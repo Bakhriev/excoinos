@@ -48,10 +48,11 @@
 
 @import './layout/pages/contact';
 @import './layout/pages/documentation';
-@import './layout/pages/login';
-@import './layout/pages/password-page';
-@import './layout/pages/prices';
-@import './layout/pages/register-phone';
-@import './layout/pages/register';
-@import './layout/pages/sign-up-email';
 @import './layout/pages/profile';
+@import './layout/pages/prices';
+
+@import './layout/pages/login';
+@import './layout/pages/create-password';
+
+@import './layout/pages/register-phone';
+@import './layout/pages/register-email';
