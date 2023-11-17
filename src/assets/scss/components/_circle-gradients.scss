@@ -11,7 +11,7 @@ body {
 		background-position: center center;
 		background-size: 200px 200px;
 		background-repeat: repeat;
-		opacity: 0.6;
+		opacity: 0.8;
 	}
 }
 .texture {
@@ -23,8 +23,7 @@ body {
 
 .violet-tex-rect {
 	transform: rotate(-120deg);
-	top: 200px;
-	right: 0;
+
 	width: 290px;
 	height: 410px;
 	border-radius: 32px;
@@ -36,8 +35,6 @@ body {
 }
 
 .violet-tex-circle {
-	top: 150px;
-	right: 0px;
 	width: 300px;
 	height: 300px;
 	border-radius: 50%;
@@ -49,19 +46,53 @@ body {
 }
 
 .orange-tex-circle {
-	top: 200px;
-	left: 200px;
 	width: 200px;
 	height: 250px;
-	background: linear-gradient(180deg, rgba(255, 135, 24, 0) 0%, #ff5d17 100%);
+	background: linear-gradient(180deg, transparent, #ff5d17 100%);
 	border-radius: 50%;
 }
 
 .orange-tex-rect {
-	top: 450px;
-	left: 150px;
 	width: 227px;
 	height: 322px;
 	transform: rotate(140deg);
-	background: linear-gradient(180deg, rgba(255, 135, 24, 0) 0%, #ff5d17 100%);
+	background: linear-gradient(180deg, transparent, #ff5d17 100%);
+}
+
+.orange-tex-circle--1 {
+	top: 250px;
+	left: 250px;
+}
+
+.orange-tex-rect--1 {
+	top: 500px;
+	left: 150px;
+}
+
+.violet-tex-circle--1 {
+	top: 150px;
+	right: 0px;
+}
+
+.violet-tex-rect--1 {
+	top: 200px;
+	right: 0;
+}
+
+.orange-tex-rect--2 {
+	top: 1600px;
+	left: -150px;
+}
+
+.violet-tex-circle--2 {
+	width: 400px;
+	height: 500px;
+	top: 1450px;
+	left: 0px;
+	border-radius: 20px;
+	background: linear-gradient(
+		180deg,
+		rgba(119, 9, 222, 0.5) 0%,
+		rgba(212, 71, 85, 0) 100%
+	);
 }
