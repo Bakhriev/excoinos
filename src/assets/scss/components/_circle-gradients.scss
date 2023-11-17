@@ -27,6 +27,10 @@ body {
 
 	width: 290px;
 	height: 410px;
+	@media screen and (max-width: 1200px) {
+		height: 150px;
+		width: 150px;
+	}
 	border-radius: 32px;
 	background: linear-gradient(
 		176deg,
@@ -38,6 +42,10 @@ body {
 .violet-tex-circle {
 	width: 300px;
 	height: 300px;
+	@media screen and (max-width: 1200px) {
+		height: 150px;
+		width: 150px;
+	}
 	border-radius: 50%;
 	background: linear-gradient(
 		176deg,
@@ -49,6 +57,10 @@ body {
 .orange-tex-circle {
 	width: 200px;
 	height: 250px;
+	@media screen and (max-width: 1200px) {
+		height: 150px;
+		width: 150px;
+	}
 	background: linear-gradient(180deg, transparent, #ff5d17 100%);
 	border-radius: 50%;
 }
@@ -56,6 +68,10 @@ body {
 .orange-tex-rect {
 	width: 227px;
 	height: 322px;
+	@media screen and (max-width: 1200px) {
+		height: 150px;
+		width: 150px;
+	}
 	transform: rotate(140deg);
 	background: linear-gradient(180deg, transparent, #ff5d17 100%);
 }
@@ -63,21 +79,35 @@ body {
 .orange-tex-circle--1 {
 	top: 250px;
 	left: 250px;
+	@media screen and (max-width: 1200px) {
+		display: none;
+	}
 }
 
 .orange-tex-rect--1 {
 	top: 500px;
 	left: 150px;
+	@media screen and (max-width: 1200px) {
+		top: 200px;
+		left: -50px;
+	}
 }
 
 .violet-tex-circle--1 {
 	top: 150px;
 	right: 0px;
+	@media screen and (max-width: 992px) {
+		display: none;
+	}
 }
 
 .violet-tex-rect--1 {
 	top: 200px;
 	right: 0;
+	@media screen and (max-width: 992px) {
+		top: 300px;
+		right: -150px;
+	}
 }
 
 .orange-tex-rect--2 {
@@ -96,4 +126,26 @@ body {
 		rgba(119, 9, 222, 0.5) 0%,
 		rgba(212, 71, 85, 0) 100%
 	);
+}
+
+.multi-texture {
+	position: absolute;
+	top: 2850px;
+	left: calc(50% + 40px);
+	transform: translateX(-50%);
+	width: 700px;
+	height: 300px;
+	border-radius: 691px;
+	@media screen and (max-width: 992px) {
+		width: 300px;
+		top: 2600px;
+		height: 300px;
+	}
+	background: linear-gradient(
+		257deg,
+		#7c0cd9 -1.26%,
+		#512d13 59.02%,
+		#ff6b00 59.02%
+	);
+	opacity: 0.2;
 }
