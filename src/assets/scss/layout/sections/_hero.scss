@@ -68,7 +68,9 @@
 		}
 	}
 }
-
+.wrapper {
+	position: relative;
+}
 .crypto-text {
 	position: absolute;
 	top: 380px;
@@ -82,4 +84,7 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 	opacity: 0.5;
+	@media screen and (max-width: 992px) {
+		display: none;
+	}
 }
