@@ -149,3 +149,21 @@ body {
 	);
 	opacity: 0.2;
 }
+
+.orange-tex-rect--3 {
+	bottom: -250px;
+	left: 250px;
+	width: 500px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+.violet-tex-circle--3 {
+	width: 300px;
+	height: 300px;
+	bottom: 0px;
+	left: 150px;
+	border-radius: 10px;
+	background: linear-gradient(180deg, #572c82 0%, #74301a 100%);
+	opacity: 0.6;
+}
