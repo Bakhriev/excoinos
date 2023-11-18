@@ -1,6 +1,6 @@
 <header class="header">
 	<div class="header__container">
-		<div class="logo-container">
+		<div class="logo-container move-right">
 			<a href="#" class="logo logo_main"
 				><img
 					width="161"
@@ -26,28 +26,36 @@
 				<nav>
 					<ul class="menu">
 						<li>
-							<a href="#" class="menu__link border-bottom-line">Buy / Sell</a>
+							<a href="#" class="menu__link border-bottom-line move-left"
+								>Buy / Sell</a
+							>
 						</li>
 						<li>
-							<a href="#" class="menu__link border-bottom-line"
+							<a href="#" class="menu__link border-bottom-line wipe-enter"
 								>Crypto Prices</a
 							>
 						</li>
 						<li>
-							<a href="#" class="menu__link border-bottom-line"
+							<a href="#" class="menu__link border-bottom-line move-top"
 								>Documentation</a
 							>
 						</li>
 						<li>
-							<a href="#" class="menu__link border-bottom-line">Contact</a>
+							<a href="#" class="menu__link border-bottom-line move-bot"
+								>Contact</a
+							>
 						</li>
 					</ul>
 				</nav>
 				<div class="header__actions">
 					@include('./components/lang-dropdown.html')
 					<div class="header__buttons">
-						<button class="btn btn-border button-reset">Log in</button>
-						<button class="btn btn-gradient button-reset">Sign up</button>
+						<button class="btn btn-border button-reset move-right-scale">
+							Log in
+						</button>
+						<button class="btn btn-gradient button-reset move-left-scale">
+							Sign up
+						</button>
 					</div>
 				</div>
 			</div>
