@@ -21,11 +21,22 @@
 		}
 	}
 
-	&__icon {
+	&__btn {
 		position: absolute;
 		right: 20px;
 		top: 50%;
 		transform: translateY(-50%);
+	}
+
+	&__icon {
+		stroke: #9494b2;
+		transition:
+			scale 100ms ease,
+			stroke 100ms ease;
+		@include hover {
+			scale: 1.2;
+			stroke: #790bdd;
+		}
 	}
 }
 

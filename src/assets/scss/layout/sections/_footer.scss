@@ -161,3 +161,32 @@
 	background: url('../img/social/youtube.svg') no-repeat center;
 	background-size: 24px 24px;
 }
+
+.instagram-icon,
+.twitter-icon,
+.facebook-icon,
+.youtube-icon {
+	fill: #fff;
+	transition:
+		fill 100ms ease,
+		scale 100ms ease;
+	&:hover {
+		scale: 1.5;
+	}
+	width: 24px;
+	height: 24px;
+}
+
+.instagram-icon:hover {
+	fill: #fb0173;
+}
+.twitter-icon:hover {
+	fill: #1d9bf0;
+}
+.facebook-icon:hover {
+	fill: #4867aa;
+}
+
+.youtube-icon:hover {
+	fill: #fc0202;
+}

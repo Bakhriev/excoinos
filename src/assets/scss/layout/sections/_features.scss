@@ -114,6 +114,7 @@
 		}
 	}
 }
+
 .features-card {
 	position: relative;
 	display: flex;
@@ -129,7 +130,7 @@
 			rgba(229, 82, 60, 0.05) -29.45%,
 			rgba(218, 74, 76, 0) 27.86%
 		),
-		linear-gradient(267deg, #14141b 40.67%, rgba(20, 20, 27, 0) 99.81%),
+		linear-gradient(267deg, #14141b 40.67%, rgba(20, 20, 27, 0) 175.81%),
 		url('../img/decor.png');
 
 	@media screen and (max-width: 992px) {
