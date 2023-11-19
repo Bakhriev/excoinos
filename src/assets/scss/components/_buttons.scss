@@ -165,16 +165,16 @@
 	padding: 0;
 	border: none;
 	cursor: pointer;
-
+	display: block;
 	position: relative;
-	width: 20px;
-	height: 20px;
+	width: 40px;
+	height: 40px;
 
 	&::before,
 	&::after {
 		content: '';
 		position: absolute;
-		width: 100%;
+		width: 25px;
 		height: 2px;
 		background: var(--purple-gradient);
 		@include center;
