@@ -1,4 +1,4 @@
-<section class="hero">
+<section class="hero in_view">
 	<div class="hero__container container">
 		<div class="hero__btns">
 			<button class="btn btn-gradient button-reset hero__btn light-speed-right">
@@ -8,12 +8,342 @@
 				Sell Crypto
 			</button>
 		</div>
-		<h1 class="hero__title section-title fade-out">
+		<h1 class="hero__title section-title move-top">
 			Buy Bitcoin with Credit Card or Debit Card
 		</h1>
-		<p class="hero__subtitle">
+		<p class="hero__subtitle move-top">
 			First transaction — no Paybis fee!Enjoy world-class commission rates!
 		</p>
-		@include('./components/exchange.html')
+		<div class="exchange move-top">
+			<div class="exchange__top">
+				<!-- Converter-1 -->
+				<div class="exchange-block">
+					<div class="exchange-block__title">You Spend</div>
+					<!--  -->
+
+					<div class="converter">
+						<input
+							class="converter__field"
+							type="number"
+							inputmode="numeric"
+							placeholder="0"
+						/>
+
+						<div class="converter-select">
+							<img
+								class="converter-currency-img"
+								src="./assets/img/icons/usd-sm.svg"
+								alt="USD"
+							/>
+
+							<div class="converter-select__info">
+								<div class="converter-currency">USD</div>
+								<div class="converter-type">Credit/Debit Card</div>
+							</div>
+
+							<div class="converter-arrow" aria-hidden="true"></div>
+						</div>
+
+						<div class="converter-drop">
+							<div class="converter-drop__top">
+								<div class="converter-drop__actions">
+									<div class="converter-drop__buttons">
+										<button class="btn btn-gradient button-reset">
+											Buy Crypto
+										</button>
+										<button class="btn btn-secondary button-reset">
+											Sell Crypto
+										</button>
+									</div>
+									<div class="converter-drop__info">
+										<img
+											class="converter-currency-img"
+											src="./assets/img/icons/usd-sm.svg"
+											alt="USD"
+										/>
+										<div class="converter-currency">USD</div>
+									</div>
+								</div>
+								<form action="#" class="search converter-drop__search">
+									<input
+										type="text"
+										class="search__field"
+										placeholder="Search "
+										value=""
+									/>
+									<button type="submit" class="search__btn button-reset">
+										<svg
+											aria-hidden="click to send email"
+											class="search__icon"
+											width="20px"
+											height="20px"
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+											<g
+												id="SVGRepo_tracerCarrier"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+
+											<g id="SVGRepo_iconCarrier">
+												<path
+													d="M16.6725 16.6412L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</g>
+										</svg>
+									</button>
+								</form>
+
+								<div class="converter-drop__text">Select payment method</div>
+							</div>
+							<ul class="converter-menu">
+								<li class="converter-menu__item">
+									<img
+										class="converter-currency-img"
+										src="./assets/img/icons/usd-sm.svg"
+										alt="USD"
+									/>
+									<div class="converter-menu__info">
+										<div class="converter-menu__type">Credit/Debit Card</div>
+										<div class="converter-menu__rate">$5 – $20 000 per tx</div>
+									</div>
+								</li>
+								<li class="converter-menu__item">
+									<img
+										class="converter-currency-img"
+										src="./assets/img/icons/usd-sm.svg"
+										alt="USD"
+									/>
+									<div class="converter-menu__info">
+										<div class="converter-menu__type">Credit/Debit Card</div>
+										<div class="converter-menu__rate">$5 – $20 000 per tx</div>
+									</div>
+								</li>
+								<li class="converter-menu__item">
+									<img
+										class="converter-currency-img"
+										src="./assets/img/icons/usd-sm.svg"
+										alt="USD"
+									/>
+									<div class="converter-menu__info">
+										<div class="converter-menu__type">Credit/Debit Card</div>
+										<div class="converter-menu__rate">$5 – $20 000 per tx</div>
+									</div>
+								</li>
+								<li class="converter-menu__item">
+									<img
+										class="converter-currency-img"
+										src="./assets/img/icons/usd-sm.svg"
+										alt="USD"
+									/>
+									<div class="converter-menu__info">
+										<div class="converter-menu__type">Credit/Debit Card</div>
+										<div class="converter-menu__rate">$5 – $20 000 per tx</div>
+									</div>
+								</li>
+								<li class="converter-menu__item">
+									<img
+										class="converter-currency-img"
+										src="./assets/img/icons/usd-sm.svg"
+										alt="USD"
+									/>
+									<div class="converter-menu__info">
+										<div class="converter-menu__type">Credit/Debit Card</div>
+										<div class="converter-menu__rate">$5 – $20 000 per tx</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!--  -->
+				</div>
+
+				<!-- Change Icon -->
+				<img
+					width="18px"
+					height="18px"
+					src="./assets/img/icons/exchange.svg"
+					alt="exchange icon"
+					class="exchange-icon exchange__icon"
+				/>
+
+				<!-- Converter-2 -->
+				<div class="exchange-block">
+					<div class="exchange-block__title">You Receive</div>
+
+					<!--  -->
+
+					<div class="converter">
+						<input
+							class="converter__field"
+							type="number"
+							inputmode="numeric"
+							placeholder="0"
+						/>
+
+						<div class="converter-select">
+							<img
+								class="converter-currency-img"
+								src="./assets/img/icons/btc-sm.svg"
+								alt="USD"
+							/>
+
+							<div class="converter-select__info">
+								<div class="converter-currency">BTC</div>
+								<div class="converter-type">Bitcoin</div>
+							</div>
+
+							<div class="converter-arrow" aria-hidden="true"></div>
+						</div>
+
+						<div class="converter-drop">
+							<div class="converter-drop__top">
+								<div class="converter-drop__actions">
+									<div class="converter-drop__buttons">
+										<button class="btn btn-gradient button-reset">
+											Buy Crypto
+										</button>
+										<button class="btn btn-secondary button-reset">
+											Sell Crypto
+										</button>
+									</div>
+									<div class="converter-drop__info">
+										<img
+											class="converter-currency-img"
+											src="./assets/img/icons/btc-sm.svg"
+											alt="USD"
+										/>
+										<div class="converter-currency">BTC</div>
+									</div>
+								</div>
+								<form action="#" class="search converter-drop__search">
+									<input
+										type="text"
+										class="search__field"
+										placeholder="Search "
+										value=""
+									/>
+									<button type="submit" class="search__btn button-reset">
+										<svg
+											aria-hidden="click to send email"
+											class="search__icon"
+											width="20px"
+											height="20px"
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+											<g
+												id="SVGRepo_tracerCarrier"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+
+											<g id="SVGRepo_iconCarrier">
+												<path
+													d="M16.6725 16.6412L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</g>
+										</svg>
+									</button>
+								</form>
+
+								<div class="converter-drop__text">Select payment method</div>
+							</div>
+							<ul class="converter-menu">
+								<li class="converter-menu__item">
+									<img
+										class="converter-currency-img"
+										src="./assets/img/icons/usd-sm.svg"
+										alt="USD"
+									/>
+									<div class="converter-menu__info">
+										<div class="converter-menu__type">Credit/Debit Card</div>
+										<div class="converter-menu__rate">$5 – $20 000 per tx</div>
+									</div>
+								</li>
+								<li class="converter-menu__item">
+									<img
+										class="converter-currency-img"
+										src="./assets/img/icons/usd-sm.svg"
+										alt="USD"
+									/>
+									<div class="converter-menu__info">
+										<div class="converter-menu__type">Credit/Debit Card</div>
+										<div class="converter-menu__rate">$5 – $20 000 per tx</div>
+									</div>
+								</li>
+								<li class="converter-menu__item">
+									<img
+										class="converter-currency-img"
+										src="./assets/img/icons/usd-sm.svg"
+										alt="USD"
+									/>
+									<div class="converter-menu__info">
+										<div class="converter-menu__type">Credit/Debit Card</div>
+										<div class="converter-menu__rate">$5 – $20 000 per tx</div>
+									</div>
+								</li>
+								<li class="converter-menu__item">
+									<img
+										class="converter-currency-img"
+										src="./assets/img/icons/usd-sm.svg"
+										alt="USD"
+									/>
+									<div class="converter-menu__info">
+										<div class="converter-menu__type">Credit/Debit Card</div>
+										<div class="converter-menu__rate">$5 – $20 000 per tx</div>
+									</div>
+								</li>
+								<li class="converter-menu__item">
+									<img
+										class="converter-currency-img"
+										src="./assets/img/icons/usd-sm.svg"
+										alt="USD"
+									/>
+									<div class="converter-menu__info">
+										<div class="converter-menu__type">Credit/Debit Card</div>
+										<div class="converter-menu__rate">$5 – $20 000 per tx</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!--  -->
+				</div>
+			</div>
+			<div class="exchange__bottom">
+				<button class="btn btn-gradient button-reset exchange__btn">
+					Buy now
+				</button>
+				<div class="exchange__info">
+					<div class="exchange__text">Commission details</div>
+					<div class="exchange-details">
+						<div class="exchange-detail">
+							<div class="exchange-detail__type">Service fee</div>
+							<div class="exchange-detail__number">3.70 USD</div>
+						</div>
+						<div class="exchange-detail">
+							<div class="exchange-detail__type">Network fee</div>
+							<div class="exchange-detail__number">1.11 USD</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>

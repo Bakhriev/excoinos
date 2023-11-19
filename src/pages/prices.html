@@ -22,27 +22,37 @@
 			@include('../assets/layout/header.html')
 
 			<main class="main">
-				<section class="prices">
+				<section class="prices in_view">
 					<div class="prices__container container">
 						<ul class="breadcrumbs prices__breadcrumbs list-reset">
-							<li class="breadcrumbs-item gradient-link">Home</li>
-							<li class="breadcrumbs-item">Prices</li>
+							<li class="breadcrumbs-item gradient-link move-top">Home</li>
+							<li class="breadcrumbs-item move-top">Prices</li>
 						</ul>
-						<h1 class="prices__title section-title">Crypto Prices</h1>
+						<h1 class="prices__title section-title move-top">Crypto Prices</h1>
 						<div class="categories prices__categories">
-							<button class="categories__btn active button-reset">
+							<button class="categories__btn move-right active button-reset">
 								Popular
 							</button>
-							<button class="categories__btn button-reset">Metaverse</button>
-							<button class="categories__btn button-reset">
+							<button class="categories__btn move-right button-reset">
+								Metaverse
+							</button>
+							<button class="categories__btn move-right button-reset">
 								Entertainment
 							</button>
-							<button class="categories__btn button-reset">Energy</button>
-							<button class="categories__btn button-reset">Gaming</button>
-							<button class="categories__btn button-reset">Music</button>
-							<button class="categories__btn button-reset">See All 12+</button>
+							<button class="categories__btn move-right button-reset">
+								Energy
+							</button>
+							<button class="categories__btn move-right button-reset">
+								Gaming
+							</button>
+							<button class="categories__btn move-right button-reset">
+								Music
+							</button>
+							<button class="categories__btn move-right button-reset">
+								See All 12+
+							</button>
 						</div>
-						<form action="#" class="search prices__search">
+						<form action="#" class="search prices__search move-right">
 							<input
 								type="text"
 								class="search__field"
@@ -83,7 +93,7 @@
 
 						<table class="table prices__table">
 							<thead>
-								<tr class="table__grid table__thead-row">
+								<tr class="table__grid table__thead-row move-left">
 									<th>no</th>
 									<th>name</th>
 									<th>last price</th>
@@ -93,7 +103,7 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr class="table__tbody-row table__grid">
+								<tr class="table__tbody-row table__grid move-left">
 									<td>1</td>
 									<td>
 										<div class="table-info">
@@ -133,7 +143,7 @@
 										</button>
 									</td>
 								</tr>
-								<tr class="table__tbody-row table__grid">
+								<tr class="table__tbody-row table__grid move-left">
 									<td>1</td>
 									<td>
 										<div class="table-info">
@@ -172,7 +182,7 @@
 										</button>
 									</td>
 								</tr>
-								<tr class="table__tbody-row table__grid">
+								<tr class="table__tbody-row table__grid move-left">
 									<td>1</td>
 									<td>
 										<div class="table-info">
@@ -211,7 +221,7 @@
 										</button>
 									</td>
 								</tr>
-								<tr class="table__tbody-row table__grid">
+								<tr class="table__tbody-row table__grid move-left">
 									<td>1</td>
 									<td>
 										<div class="table-info">
@@ -250,7 +260,7 @@
 										</button>
 									</td>
 								</tr>
-								<tr class="table__tbody-row table__grid">
+								<tr class="table__tbody-row table__grid move-left">
 									<td>1</td>
 									<td>
 										<div class="table-info">
@@ -289,7 +299,7 @@
 										</button>
 									</td>
 								</tr>
-								<tr class="table__tbody-row table__grid">
+								<tr class="table__tbody-row table__grid move-left">
 									<td>1</td>
 									<td>
 										<div class="table-info">
@@ -328,7 +338,7 @@
 										</button>
 									</td>
 								</tr>
-								<tr class="table__tbody-row table__grid">
+								<tr class="table__tbody-row table__grid move-left">
 									<td>1</td>
 									<td>
 										<div class="table-info">
@@ -370,7 +380,9 @@
 							</tbody>
 						</table>
 
-						<a href="#" class="prices__link gradient-link">See All Coins</a>
+						<a href="#" class="prices__link gradient-link move-right"
+							>See All Coins</a
+						>
 
 						<!--  -->
 					</div>

@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header in_view">
 	<div class="header__container">
 		<div class="logo-container move-right">
 			<a href="#" class="logo logo_main"
@@ -44,10 +44,25 @@
 					</ul>
 				</nav>
 				<div class="header__actions">
-					@include('./components/lang-dropdown.html')
+					<button class="lang-drop move-left" tabindex="0">
+						<div class="lang-drop__toggle">
+							<div>English</div>
+							<div class="lang-drop__icon" data-icon="arrow-bottom"></div>
+						</div>
+						<ul class="lang-menu">
+							<li class="lang-menu__item" tabindex="0">Text 1</li>
+							<li class="lang-menu__item" tabindex="0">Text 1</li>
+							<li class="lang-menu__item" tabindex="0">Text 1</li>
+						</ul>
+					</button>
+
 					<div class="header__buttons">
-						<button class="btn btn-border button-reset">Log in</button>
-						<button class="btn btn-gradient button-reset">Sign up</button>
+						<button class="btn btn-border button-reset move-left">
+							Log in
+						</button>
+						<button class="btn btn-gradient button-reset move-left">
+							Sign up
+						</button>
 					</div>
 				</div>
 			</div>

@@ -16,9 +16,9 @@
 		<div class="wrapper wrapper_circles">
 			<div class="texture orange-tex-rect orange-tex-rect--3"></div>
 			<div class="texture violet-tex-circle violet-tex-circle--3"></div>
-			<header class="header header_authorized">
+			<header class="header header_authorized in_view">
 				<div class="header__container">
-					<div class="logo-container">
+					<div class="logo-container move-right">
 						<a href="#" class="logo logo_main"
 							><img
 								width="161"
@@ -43,22 +43,22 @@
 							></button>
 							<nav>
 								<ul class="menu">
-									<li>
+									<li class="move-bot">
 										<a href="#" class="menu__link border-bottom-line"
 											>Buy / Sell</a
 										>
 									</li>
-									<li>
+									<li class="move-bot">
 										<a href="#" class="menu__link border-bottom-line"
 											>Crypto Prices</a
 										>
 									</li>
-									<li>
+									<li class="move-bot">
 										<a href="#" class="menu__link border-bottom-line"
 											>Documentation</a
 										>
 									</li>
-									<li>
+									<li class="move-bot">
 										<a href="#" class="menu__link border-bottom-line"
 											>Contact</a
 										>
@@ -67,7 +67,7 @@
 							</nav>
 
 							<div class="header__buttons">
-								<div class="user-dropdown">
+								<div class="user-dropdown move-left">
 									<button class="user-dropdown__toggle text-gradient">
 										<div>antonharitonov</div>
 										<div class="user-dropdown__icon">
@@ -126,23 +126,27 @@
 			</header>
 
 			<main class="main">
-				<section class="profile">
+				<section class="profile in_view">
 					<div class="container profile__container">
-						<div class="profile__title">Personal account</div>
+						<div class="profile__title move-bot">Personal account</div>
 
 						<!-- Tab Navigation -->
 						<div class="profile-nav-menu profile__menu">
-							<button class="profile-nav-menu__item active">
+							<button class="profile-nav-menu__item active move-right">
 								Profile settings
 							</button>
-							<button class="profile-nav-menu__item">Verification</button>
-							<button class="profile-nav-menu__item">Security</button>
+							<button class="profile-nav-menu__item move-right">
+								Verification
+							</button>
+							<button class="profile-nav-menu__item move-right">
+								Security
+							</button>
 						</div>
 
 						<!-- TAB 1 -->
 						<div class="profile-settings">
 							<div class="profile-settings__fields">
-								<div class="basic-input">
+								<div class="basic-input move-top">
 									<label class="basic-input__label" for="">E-mail</label>
 									<input
 										type="text"
@@ -151,7 +155,7 @@
 									/>
 								</div>
 								<!--  -->
-								<div class="basic-input">
+								<div class="basic-input move-top">
 									<label class="basic-input__label" for="">Language</label>
 									<div class="basic-select">
 										<button class="basic-select__toggle button-reset">
@@ -207,7 +211,7 @@
 								</div>
 								<!--  -->
 
-								<div class="basic-input">
+								<div class="basic-input move-top">
 									<label class="basic-input__label" for="">Имя</label>
 									<input
 										type="text"
@@ -216,7 +220,7 @@
 									/>
 								</div>
 
-								<div class="basic-input">
+								<div class="basic-input move-top">
 									<label class="basic-input__label" for="">Фамилия</label>
 									<input
 										type="text"
@@ -225,7 +229,7 @@
 									/>
 								</div>
 
-								<div class="basic-input">
+								<div class="basic-input move-top">
 									<label class="basic-input__label" for="">Адрес</label>
 									<input
 										type="text"
@@ -234,14 +238,16 @@
 									/>
 								</div>
 							</div>
-							<button class="btn-gradient btn-md button-reset">Save</button>
+							<button class="btn-gradient btn-md button-reset move-top">
+								Save
+							</button>
 						</div>
 
 						<!-- TAB 2 -->
 						<div class="verification">
 							<div class="verification__cards">
 								<!-- 1 -->
-								<div class="verification-card approved">
+								<div class="verification-card approved move-right">
 									<img
 										class="verification-card__icon"
 										src="./assets/img/verification/approved.svg"
@@ -255,7 +261,7 @@
 									</div>
 								</div>
 								<!-- 2 -->
-								<div class="verification-card unload">
+								<div class="verification-card unload move-right">
 									<img
 										class="verification-card__icon"
 										src="./assets/img/verification/basic.svg"
@@ -306,7 +312,7 @@
 									</button>
 								</div>
 								<!-- 3 -->
-								<div class="verification-card inspection">
+								<div class="verification-card inspection move-right">
 									<img
 										class="verification-card__icon"
 										src="./assets/img/verification/inspection.svg"
@@ -320,7 +326,7 @@
 									</div>
 								</div>
 								<!-- 4 -->
-								<div class="verification-card rejected">
+								<div class="verification-card rejected move-right">
 									<img
 										class="verification-card__icon"
 										src="./assets/img/verification/rejected.svg"
@@ -335,7 +341,7 @@
 								</div>
 							</div>
 
-							<button class="btn-md btn-gradient button-reset">
+							<button class="btn-md btn-gradient button-reset move-right">
 								pass verification
 							</button>
 						</div>
@@ -343,7 +349,7 @@
 						<!-- TAB 3 -->
 						<div class="security">
 							<div class="security__top">
-								<div class="basic-input security__phone">
+								<div class="basic-input security__phone move-right">
 									<label class="basic-input__label" for="">Phone</label>
 									<div class="phone-input">
 										<div class="phone-input__country">
@@ -363,26 +369,26 @@
 								</div>
 
 								<button
-									class="btn-md gradient-border text-gradient button-reset"
+									class="btn-md gradient-border text-gradient button-reset move-right"
 								>
 									Change phone
 								</button>
 							</div>
 
 							<div class="reset-password">
-								<div class="basic-input">
+								<div class="basic-input move-top">
 									<label class="basic-input__label" for=""
 										>Старый пароль
 									</label>
 									<input id="" name="" value="" type="password" class="input" />
 								</div>
 
-								<div class="basic-input">
+								<div class="basic-input move-top">
 									<label class="basic-input__label" for="">Новый пароль </label>
 									<input id="" name="" value="" type="password" class="input" />
 								</div>
 
-								<div class="basic-input">
+								<div class="basic-input move-top">
 									<label class="basic-input__label" for=""
 										>Повторите пароль
 									</label>
@@ -390,7 +396,9 @@
 								</div>
 							</div>
 
-							<button class="btn-gradient btn-md button-reset">change</button>
+							<button class="btn-gradient btn-md button-reset move-top">
+								change
+							</button>
 						</div>
 					</div>
 				</section>
