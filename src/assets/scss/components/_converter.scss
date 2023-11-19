@@ -23,6 +23,12 @@
 			opacity: 1;
 			visibility: visible;
 		}
+		.converter-arrow {
+			transform: rotate(-180deg);
+		}
+		.converter-select {
+			background-color: #303044;
+		}
 	}
 
 	.converter__field {
@@ -55,6 +61,7 @@
 }
 
 .converter-select {
+	user-select: none;
 	padding: 16px 10px;
 	display: flex;
 	gap: 6px;
@@ -63,6 +70,7 @@
 	border-radius: 10px;
 
 	background-color: var(--app-bg);
+	transition: background-color 150ms ease-out;
 	cursor: pointer;
 
 	@media screen and (max-width: 992px) {
@@ -113,10 +121,7 @@
 .converter-arrow {
 	width: 14px;
 	height: 14px;
-	background-image: url('../img/arrow-bottom-md.svg');
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
+	transition: transform 150ms ease-in-out;
 }
 
 .converter-drop {
@@ -129,11 +134,6 @@
 	transition:
 		opacity 120ms ease,
 		visibility 120ms ease;
-
-	&.active {
-		opacity: 1;
-		visibility: visible;
-	}
 
 	max-width: 100%;
 	width: 100%;
