@@ -108,10 +108,7 @@ function cssMinify() {
 }
 
 function jsMinify() {
-	return src(path.src.js)
-		.pipe(webpack(require('./webpack.config')))
-		.pipe(uglify())
-		.pipe(dest(path.build.js))
+	return src(path.src.js).pipe(uglify()).pipe(dest(path.build.js))
 }
 
 function imgMinify() {
@@ -168,7 +165,6 @@ function js() {
 				},
 			})
 		)
-		.pipe(webpack(require('./webpack.config')))
 		.pipe(dest(path.build.js))
 		.pipe(browserSync.reload({stream: true}))
 }
@@ -181,12 +177,12 @@ function video() {
 	return src(path.src.video).pipe(dest(path.build.video))
 }
 
-function webpImg() {
-	return src(srcPath + 'assets/img/**/*.{jpeg,jpg,png}')
-		.pipe(webp())
-		.pipe(dest(distPath + 'assets/img/webp'))
-		.pipe(browserSync.reload({stream: true}))
-}
+// function webpImg() {
+// 	return src(srcPath + 'assets/img/**/*.{jpeg,jpg,png}')
+// 		.pipe(webp())
+// 		.pipe(dest(distPath + 'assets/img/webp'))
+// 		.pipe(browserSync.reload({stream: true}))
+// }
 
 // function svg() {
 // 	return src(path.src.svg)
@@ -241,7 +237,7 @@ function prod(done) {
 
 const dev = series(
 	clean,
-	parallel(html, pages, css, js, img, video, webpImg, svg, vendors, fonts),
+	parallel(html, pages, css, js, img, video, svg, vendors, fonts),
 	serve
 )
 const build = series(
@@ -254,7 +250,6 @@ const build = series(
 		jsMinify,
 		imgMinify,
 		video,
-		webpImg,
 		svg,
 		vendors,
 		fonts
@@ -272,10 +267,10 @@ function watchFiles() {
 	watch([srcPath + 'assets/js/**/*.js'], js)
 	watch([path.src.img], img)
 	watch([path.src.video], video)
-	watch([path.src.img], webp)
 	watch([path.src.svg], svg)
 	watch([path.src.vendors], vendors)
 	watch([path.src.fonts], fonts)
+	// watch([path.src.img], webp)
 }
 
 const runParallel = parallel(dev, watchFiles)
@@ -286,7 +281,7 @@ exports.css = css
 exports.js = js
 exports.img = img
 exports.video = video
-exports.webpImg = webpImg
+// exports.webpImg = webpImg
 exports.svg = svg
 exports.dev = dev
 exports.vendors = vendors
