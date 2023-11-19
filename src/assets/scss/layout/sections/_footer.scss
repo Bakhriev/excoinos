@@ -3,6 +3,12 @@
 	padding-bottom: 40px;
 
 	position: relative;
+
+	&.in_view {
+		&::before {
+			opacity: 1;
+		}
+	}
 	&::before {
 		content: '';
 		position: absolute;
@@ -12,6 +18,8 @@
 		width: 75%;
 		height: 1px;
 		background-color: #1a1b23;
+		opacity: 0;
+		transition: opacity 300ms linear;
 		@media screen and (max-width: 992px) {
 			width: calc(100% - 40px);
 		}
