@@ -3,6 +3,7 @@
 	background-color: transparent;
 	border: none;
 	position: relative;
+	z-index: 5;
 	user-select: none;
 
 	&.active {

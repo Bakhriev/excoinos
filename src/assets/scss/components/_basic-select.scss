@@ -5,6 +5,12 @@
 	border: 1px solid var(--bg-gray-100);
 	background-color: var(--bg-gray);
 
+	&_disabled {
+		opacity: 0.7;
+		pointer-events: none;
+		user-select: none;
+	}
+
 	&.active {
 		.basic-select__menu {
 			opacity: 1;
@@ -23,6 +29,14 @@
 		@media screen and (max-width: 500px) {
 			padding: 20px;
 		}
+	}
+
+	&__label {
+		color: #9494b2;
+		font-family: Stolzl;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: normal;
 	}
 
 	&__selected {
