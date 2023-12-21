@@ -1,0 +1,58 @@
+// base
+@import './base/reset';
+
+// fonts
+@import './fonts/fonts';
+
+// sass-utils
+@import './sass-utils/variables';
+@import './sass-utils/mixins';
+@import './sass-utils/global';
+@import './sass-utils/animations';
+
+// components
+@import './components/basic-input';
+@import './components/basic-select';
+@import './components/breadcrumbs';
+@import './components/burger';
+@import './components/buttons';
+@import './components/converter';
+@import './components/crypto-table';
+@import './components/custom-checkbox';
+@import './components/circle-gradients';
+
+@import './components/exchange';
+@import './components/file-input';
+@import './components/lang-dropdown';
+@import './components/notification';
+@import './components/overlay';
+@import './components/progress';
+@import './components/search';
+@import './components/user-dropdown';
+@import './components/email-form';
+@import './components/add-card';
+
+// Layout
+@import './layout/auth';
+
+// layout Sections
+@import './layout/sections/currency-cards';
+@import './layout/sections/faq';
+@import './layout/sections/features';
+@import './layout/sections/footer';
+@import './layout/sections/header';
+@import './layout/sections/hero';
+@import './layout/sections/license';
+@import './layout/sections/receive';
+
+// Layout / Pages
+
+@import './layout/pages/contact';
+@import './layout/pages/documentation';
+@import './layout/pages/profile';
+@import './layout/pages/prices';
+
+@import './layout/pages/create-password';
+
+@import './layout/pages/register-phone';
+@import './layout/pages/register-email';

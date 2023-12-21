@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<title>title</title>
+	</head>
+
+	<body>
+		<div class="overlay"></div>
+		<div class="notification gradient-border active">
+			<div class="notification__content">Ваш пароль был изменен</div>
+		</div>
+
+		<div class="wrapper wrapper_circles">
+			<div class="texture orange-tex-rect orange-tex-rect--3"></div>
+			<div class="texture violet-tex-circle violet-tex-circle--3"></div>
+			<header class="header header_authorized in_view">
+				<div class="header__container">
+					<div class="logo-container move-right">
+						<a href="#" class="logo logo_main"
+							><img
+								width="161"
+								height="24"
+								src="./assets/img/icons/main-logo.svg"
+								alt="logo"
+						/></a>
+
+						<a href="#" class="logo logo_mobile"
+							><img
+								width="150"
+								height="40"
+								src="./assets/img/icons/mobile-logo.svg"
+								alt="logo"
+						/></a>
+					</div>
+					<div class="mobile-menu">
+						<div class="mobile-menu__content">
+							<button
+								class="btn-close mobile-menu__close"
+								aria-label="click to close menu"
+							></button>
+							<nav>
+								<ul class="menu">
+									<li class="move-bot">
+										<a href="#" class="menu__link border-bottom-line"
+											>Buy / Sell</a
+										>
+									</li>
+									<li class="move-bot">
+										<a href="#" class="menu__link border-bottom-line"
+											>Crypto Prices</a
+										>
+									</li>
+									<li class="move-bot">
+										<a href="#" class="menu__link border-bottom-line"
+											>Documentation</a
+										>
+									</li>
+									<li class="move-bot">
+										<a href="#" class="menu__link border-bottom-line"
+											>Contact</a
+										>
+									</li>
+								</ul>
+							</nav>
+
+							<div class="header__buttons">
+								<div class="user-dropdown move-left">
+									<button class="user-dropdown__toggle text-gradient">
+										<div>antonharitonov</div>
+										<div class="user-dropdown__icon">
+											<img src="./assets/img/icons/logout.svg" />
+										</div>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--  -->
+
+					@include('../assets/layout/components/burger.html')
+
+					<!--  -->
+				</div>
+			</header>
+
+			<main class="main">
+				<section class="profile in_view">
+					<div class="container profile__container">
+						<div class="profile__title move-bot">Personal account</div>
+
+						<!-- Tab Navigation -->
+						<div class="profile-nav-menu profile__menu">
+							<button class="profile-nav-menu__item active move-right">
+								Profile settings
+							</button>
+							<button class="profile-nav-menu__item move-right">
+								Verification
+							</button>
+							<button class="profile-nav-menu__item move-right">
+								Security
+							</button>
+						</div>
+
+						<!-- TAB 1 -->
+						<div class="profile-settings">
+							<div class="profile-settings__fields">
+								<div class="basic-input move-top">
+									<label class="basic-input__label" for="">E-mail</label>
+									<input
+										type="text"
+										class="input"
+										placeholder="Введите телефон или e-mail"
+									/>
+								</div>
+								<!--  -->
+								<div class="basic-input move-top">
+									<label class="basic-input__label" for="">Language</label>
+									<div class="basic-select">
+										<button class="basic-select__toggle button-reset">
+											<!-- Add Class "hide" class on this label,  "basic-select__label" -->
+											<div class="basic-select__label hide"></div>
+											<!-- Add "hide" -->
+											<div class="basic-select__selected">English</div>
+											<div class="basic-select__icon">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="14"
+													height="9"
+													viewBox="0 0 14 9"
+													fill="none"
+												>
+													<g clip-path="url(#clip0_63_556)">
+														<path
+															d="M7.66178 8.66521L12.7344 2.77913C12.8186 2.68245 12.8854 2.56743 12.931 2.44071C12.9765 2.31398 13 2.17805 13 2.04077C13 1.90348 12.9765 1.76756 12.931 1.64083C12.8854 1.5141 12.8186 1.39908 12.7344 1.30241C12.5662 1.10872 12.3387 1 12.1015 1C11.8643 1 11.6367 1.10872 11.4685 1.30241L6.97944 6.45013L2.53526 1.30241C2.36704 1.10872 2.13949 1 1.9023 1C1.66511 1 1.43756 1.10872 1.26934 1.30241C1.18451 1.39872 1.11702 1.51358 1.07079 1.64032C1.02455 1.76706 1.00049 1.90318 1 2.04077C1.00049 2.17836 1.02455 2.31447 1.07079 2.44121C1.11702 2.56796 1.18451 2.68281 1.26934 2.77913L6.34199 8.66521C6.42607 8.77077 6.5281 8.85501 6.64168 8.91263C6.75525 8.97025 6.8779 9 7.00189 9C7.12588 9 7.24852 8.97025 7.36209 8.91263C7.47567 8.85501 7.57771 8.77077 7.66178 8.66521Z"
+															fill="white"
+														/>
+													</g>
+													<defs>
+														<clipPath id="clip0_63_556">
+															<rect
+																width="9"
+																height="14"
+																fill="white"
+																transform="translate(14) rotate(90)"
+															/>
+														</clipPath>
+													</defs>
+												</svg>
+											</div>
+										</button>
+										<div class="basic-select__menu custom-scroll">
+											<button class="basic-select__item button-reset">
+												English
+											</button>
+											<button class="basic-select__item button-reset">
+												English
+											</button>
+											<button class="basic-select__item button-reset">
+												English
+											</button>
+											<button class="basic-select__item button-reset">
+												English
+											</button>
+											<button class="basic-select__item button-reset">
+												English
+											</button>
+											<button class="basic-select__item button-reset">
+												English
+											</button>
+										</div>
+									</div>
+								</div>
+								<!--  -->
+
+								<div class="basic-input move-top">
+									<label class="basic-input__label" for="">Имя</label>
+									<input
+										type="text"
+										class="input"
+										placeholder="Введите телефон или e-mail"
+									/>
+								</div>
+
+								<div class="basic-input move-top">
+									<label class="basic-input__label" for="">Фамилия</label>
+									<input
+										type="text"
+										class="input"
+										placeholder="Введите телефон или e-mail"
+									/>
+								</div>
+
+								<div class="basic-input move-top">
+									<label class="basic-input__label" for="">Адрес</label>
+									<input
+										type="text"
+										class="input"
+										placeholder="Введите телефон или e-mail"
+									/>
+								</div>
+							</div>
+							<button class="btn-gradient btn-md button-reset move-top">
+								Save
+							</button>
+						</div>
+
+						<!-- TAB 2 -->
+						<div class="verification">
+							<div class="verification__cards">
+								<!-- 1 -->
+								<div class="verification-card approved move-right">
+									<img
+										class="verification-card__icon"
+										src="./assets/img/verification/approved.svg"
+										alt="status approved"
+									/>
+									<div class="verification-card__info">
+										<div class="verification-card__title">
+											Подтверждение паспорта
+										</div>
+										<div class="verification-card__status">Подтверждён</div>
+									</div>
+								</div>
+								<!-- 2 -->
+								<div class="verification-card unload move-right">
+									<img
+										class="verification-card__icon"
+										src="./assets/img/verification/basic.svg"
+										alt="status approved"
+									/>
+									<div class="verification-card__info">
+										<div class="verification-card__title">
+											Подтверждение паспорта
+										</div>
+										<div class="verification-card__status">Не загружен</div>
+									</div>
+									<button
+										class="load-data text-gradient verification-card__load"
+									>
+										<span>Загрузить данные</span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="12"
+											viewBox="0 0 16 12"
+											fill="none"
+										>
+											<path
+												d="M0.888672 5.99979H15.1109M15.1109 5.99979L9.77756 0.856934M15.1109 5.99979L9.77756 11.1426"
+												stroke="url(#paint0_linear_93_315)"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+											<defs>
+												<linearGradient
+													id="paint0_linear_93_315"
+													x1="18"
+													y1="1.00005"
+													x2="-0.499987"
+													y2="9.50003"
+													gradientUnits="userSpaceOnUse"
+												>
+													<stop stop-color="#FF6417" />
+													<stop
+														offset="1"
+														stop-color="#7000FF"
+														stop-opacity="0.94"
+													/>
+												</linearGradient>
+											</defs>
+										</svg>
+									</button>
+								</div>
+								<!-- 3 -->
+								<div class="verification-card inspection move-right">
+									<img
+										class="verification-card__icon"
+										src="./assets/img/verification/inspection.svg"
+										alt="status approved"
+									/>
+									<div class="verification-card__info">
+										<div class="verification-card__title">
+											Подтверждение паспорта
+										</div>
+										<div class="verification-card__status">На проверке</div>
+									</div>
+								</div>
+								<!-- 4 -->
+								<div class="verification-card rejected move-right">
+									<img
+										class="verification-card__icon"
+										src="./assets/img/verification/rejected.svg"
+										alt="status approved"
+									/>
+									<div class="verification-card__info">
+										<div class="verification-card__title">
+											Подтверждение паспорта
+										</div>
+										<div class="verification-card__status">Отклонен</div>
+									</div>
+								</div>
+							</div>
+
+							<button class="btn-md btn-gradient button-reset move-right">
+								pass verification
+							</button>
+						</div>
+
+						<!-- TAB 3 -->
+						<div class="security">
+							<div class="security__top">
+								<div class="basic-input security__phone move-right">
+									<label class="basic-input__label" for="">Phone</label>
+									<div class="phone-input">
+										<div class="phone-input__country">
+											<img
+												class="phone-input__img"
+												src="./assets/img/icons/rus.svg"
+												alt="rus"
+											/>
+											<div class="phone-input__num">+7</div>
+										</div>
+										<input
+											type="text"
+											inputmode="numeric"
+											class="phone-input__field"
+										/>
+									</div>
+								</div>
+
+								<button
+									class="btn-md gradient-border text-gradient button-reset move-right"
+								>
+									Change phone
+								</button>
+							</div>
+
+							<div class="reset-password">
+								<div class="basic-input move-top">
+									<label class="basic-input__label" for=""
+										>Старый пароль
+									</label>
+									<input id="" name="" value="" type="password" class="input" />
+								</div>
+
+								<div class="basic-input move-top">
+									<label class="basic-input__label" for="">Новый пароль </label>
+									<input id="" name="" value="" type="password" class="input" />
+								</div>
+
+								<div class="basic-input move-top">
+									<label class="basic-input__label" for=""
+										>Повторите пароль
+									</label>
+									<input id="" name="" value="" type="password" class="input" />
+								</div>
+							</div>
+
+							<button class="btn-gradient btn-md button-reset move-top">
+								change
+							</button>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			@include('../assets/layout/footer.html')
+		</div>
+
+		<script type="module" src="assets/js/main.js"></script>
+	</body>
+</html>

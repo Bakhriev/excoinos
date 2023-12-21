@@ -1,0 +1,169 @@
+.add-card {
+	max-width: 610px;
+
+	@media screen and (max-width: 600px) {
+		padding: 30px 15px;
+	}
+
+	padding: 50px 60px;
+
+	border-radius: 30px;
+	border: 0.5px solid #32324a;
+	background: rgba(20, 20, 27, 0.8);
+
+	&__title {
+		margin-bottom: 30px;
+		color: var(--white);
+		font-family: Stolzl;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 30px;
+	}
+
+	&__fields {
+		margin-bottom: 25px;
+
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	&__input {
+		input {
+			padding-right: 120px;
+		}
+	}
+
+	&__col {
+		display: flex;
+		width: 100%;
+		gap: 20px;
+		@media screen and (max-width: 400px) {
+			flex-direction: column;
+		}
+		.basic-select {
+			width: 100%;
+		}
+		.basic-input {
+			width: 100%;
+		}
+	}
+
+	&__subtitle {
+		margin-bottom: 20px;
+		color: var(--text-gray-100);
+		font-family: Stolzl;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 30px;
+	}
+
+	&__addresses {
+		margin-bottom: 20px;
+
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	&__remember {
+		margin-bottom: 20px;
+
+		display: flex;
+		align-items: flex-start;
+		gap: 10px;
+	}
+
+	&__text {
+		color: #737087;
+		font-family: Stolzl;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 140%;
+		span {
+			display: block;
+			font-weight: 700;
+			color: var(--white);
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		justify-content: space-between;
+		gap: 20px;
+		@media screen and (max-width: 450px) {
+			flex-direction: column;
+		}
+	}
+
+	&__btn {
+		width: 100%;
+		padding: 26px 40px;
+		@media screen and (max-width: 768px) {
+			padding: 18px 25px;
+		}
+
+		&:last-child {
+			padding: 22px 40px;
+			border: 2px solid #9494b2;
+			@media screen and (max-width: 500px) {
+				width: 100%;
+				padding: 18px 25px;
+			}
+
+			color: #9494b2;
+			text-align: center;
+			font-family: Gilroy;
+			font-size: 15px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			letter-spacing: 0.75px;
+			text-transform: uppercase;
+			width: max-content;
+
+			transition:
+				color 300ms linear,
+				background-color 300ms linear;
+			@include hover {
+				color: var(--white);
+				background-color: #40404b;
+			}
+		}
+	}
+}
+.basic-input {
+	&__label {
+	}
+
+	&__images {
+	}
+}
+.input {
+}
+.basic-select {
+	&__toggle {
+	}
+
+	&__selected {
+	}
+
+	&__icon {
+	}
+
+	&__menu {
+	}
+
+	&__item {
+	}
+}
+.button-reset {
+}
+.custom-scroll {
+}
+.btn {
+}
+.btn-md {
+}
+.btn-gradient {
+}

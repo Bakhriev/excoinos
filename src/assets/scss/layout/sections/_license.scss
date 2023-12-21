@@ -1,0 +1,100 @@
+.license {
+	padding-top: 170px;
+	@media screen and (max-width: 992px) {
+		padding-top: 80px;
+	}
+
+	&__title {
+		margin-bottom: 42px;
+
+		font-family: Stolzl;
+		font-size: 58px;
+		font-weight: 400;
+		line-height: 150%;
+		text-align: center;
+
+		span {
+			color: #2d2d41;
+			font-family: Stolzl;
+			font-size: 28px;
+			font-weight: 400;
+			line-height: 150%;
+			background: #2d2d41;
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: #2d2d41;
+		}
+		@media screen and (max-width: 992px) {
+			margin-bottom: 24px;
+			font-size: 42px;
+			span {
+				font-size: 16px;
+			}
+		}
+		@media screen and (max-width: 520px) {
+			font-size: 28px;
+		}
+		@media screen and (max-width: 359px) {
+			font-size: 26px;
+		}
+	}
+}
+
+.license-info {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 30px 40px;
+}
+
+.license-item {
+	padding-left: 13px;
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		width: 2px;
+		height: 92%;
+		background: linear-gradient(
+			0deg,
+			#ff6417 6.49%,
+			rgba(112, 0, 255, 0.94) 111.49%
+		);
+	}
+	max-width: 540px;
+	width: 100%;
+	// .license-item__title
+
+	&__title {
+		margin-bottom: 20px;
+		color: var(--white);
+		font-family: Stolzl;
+		font-size: 28px;
+		font-weight: 500;
+		line-height: 150%;
+		@media screen and (max-width: 992px) {
+			font-size: 22px;
+			margin-bottom: 6px;
+		}
+		@media screen and (max-width: 520px) {
+			font-size: 18px;
+		}
+	}
+
+	// .license-item__text
+
+	&__text {
+		color: var(--text-gray-100);
+		font-family: Lexend;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 150%;
+		@media screen and (max-width: 992px) {
+			font-size: 16px;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+.user-dropdown {
+	// .user-dropdown__toggle
+
+	&__toggle {
+		padding: 0;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+
+		display: flex;
+		align-items: center;
+		gap: 5px;
+
+		font-family: Stolzl;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 100%;
+	}
+
+	// .user-dropdown__icon
+
+	&__icon {
+		// Your styles for .user-dropdown__icon
+	}
+}

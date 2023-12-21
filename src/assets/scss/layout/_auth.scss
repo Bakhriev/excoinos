@@ -1,0 +1,399 @@
+// Layout for Auth pages
+
+.auth-wrapper {
+	.logo_main {
+		width: 257px;
+		height: 38px;
+	}
+	min-height: 100vh;
+	padding: 70px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	@media screen and (max-width: 768px) {
+		padding: 20px 0;
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 90px;
+
+		@media screen and (max-width: 768px) {
+			gap: 40px;
+		}
+	}
+
+	&__progress {
+		margin-bottom: 50px;
+	}
+}
+
+.checked-icon {
+	position: relative;
+	z-index: 1;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	@media screen and (max-width: 500px) {
+		width: 80px;
+	}
+}
+
+.result-content {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 50px;
+	margin-bottom: 35px;
+	@media screen and (max-width: 500px) {
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+
+	&__title {
+		margin-bottom: 10px;
+		color: #8a7f9e;
+		font-family: Stolzl;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 140%;
+	}
+
+	&__res {
+		color: var(--white);
+		font-family: Stolzl;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: normal;
+		@media screen and (max-width: 500px) {
+			font-size: 16px;
+		}
+	}
+}
+.auth-card__bg {
+	position: absolute;
+
+	left: 30px;
+	top: -50px;
+}
+
+.auth-card {
+	&--gradient {
+		position: relative;
+		overflow: hidden;
+
+		.auth-buttons_wrap {
+			@media screen and (max-width: 500px) {
+				flex-wrap: wrap;
+			}
+		}
+
+		.btn-md {
+			padding: 20px 32px;
+			&::first-letter {
+				text-transform: uppercase;
+			}
+			text-transform: lowercase;
+		}
+
+		.auth-card__title {
+			text-align: center;
+			position: relative;
+			z-index: 1;
+		}
+	}
+	margin: 0 auto;
+	max-width: 580px;
+	width: 100%;
+	padding: 60px;
+
+	border-radius: 30px;
+	border: 0.5px solid #32324a;
+	background: rgba(20, 20, 27, 0.8);
+
+	@media screen and (max-width: 992px) {
+		padding: 20px;
+	}
+
+	@media screen and (max-width: 500px) {
+		border-radius: 16px;
+	}
+
+	&__title {
+		margin-bottom: 40px;
+		color: var(--white);
+		font-family: Stolzl;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 30px;
+
+		@media screen and (max-width: 992px) {
+			margin-bottom: 30px;
+			font-size: 18px;
+		}
+	}
+
+	&__subtitle {
+		margin-bottom: 30px;
+		@media screen and (max-width: 992px) {
+			margin-bottom: 20px;
+			font-size: 14px;
+			max-width: 96%;
+		}
+		color: var(--white);
+		font-family: Stolzl;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 140%;
+		span {
+			font-weight: 500;
+		}
+	}
+
+	&__inputs {
+		margin-bottom: 35px;
+
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+
+		@media screen and (max-width: 992px) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__btn {
+		max-width: 100%;
+		min-width: 50px;
+		width: 100%;
+		padding: 24px 20px;
+
+		color: var(--white);
+		text-align: center;
+		font-family: Gilroy;
+		font-size: 15px;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: 0.75px;
+		text-transform: uppercase;
+
+		@media screen and (max-width: 500px) {
+			padding: 20px 12px;
+		}
+	}
+
+	&__text {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+
+		margin-bottom: 25px;
+
+		color: var(--text-gray-100);
+		text-align: center;
+		font-family: Lexend;
+		font-size: 14px;
+		font-weight: 500;
+		letter-spacing: 0.28px;
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 50%;
+			height: 1px;
+			background-color: #36323e;
+		}
+
+		&::before {
+			left: -70px;
+		}
+
+		&::after {
+			right: -70px;
+			height: 1px;
+		}
+
+		@media screen and (max-width: 992px) {
+			&::before {
+				left: -50px;
+			}
+			&::after {
+				right: -50px;
+			}
+		}
+	}
+}
+
+.auth {
+	&__link {
+		margin-left: auto;
+		margin-bottom: 35px;
+
+		font-family: Stolzl;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: normal;
+
+		@media screen and (max-width: 992px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__label {
+		display: inline-block;
+		margin-bottom: 8px;
+		color: #8a7f9e;
+		font-family: Stolzl;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 140%;
+	}
+}
+
+.auth-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px 20px;
+
+	margin-bottom: 30px;
+	@media screen and (max-width: 992px) {
+		margin-bottom: 28px;
+		gap: 12px;
+	}
+
+	&_wrap {
+		@media screen and (max-width: 370px) {
+			flex-wrap: wrap;
+		}
+	}
+}
+
+.auth-socials {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px 20px;
+	justify-content: center;
+	@media screen and (max-width: 992px) {
+		gap: 20px 10px;
+	}
+
+	&__link {
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+		@include hover {
+			&::before,
+			&::after {
+				transform: scale(1);
+			}
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			background-color: #a0e9ff;
+			transform: scale(1, 0);
+			transform-origin: top;
+			transition: transform 300ms ease-in-out;
+			border-radius: inherit;
+		}
+		&::after {
+			border-radius: inherit;
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			background-color: #a0e9ff;
+			transform: scale(1, 0);
+			transform-origin: bottom;
+			transition: transform 300ms ease-in-out;
+		}
+		width: 65px;
+		height: 65px;
+		display: block;
+		border-radius: 8px;
+		border: 1px solid #45455c;
+		display: grid;
+		place-items: center;
+		img {
+			width: 25px;
+			height: 25px;
+		}
+
+		@media screen and (max-width: 992px) {
+			width: 57px;
+			height: 57px;
+			img {
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
+}
+
+.confirm-code-inputs {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 14px;
+
+	@media screen and (max-width: 768px) {
+		gap: 5px;
+	}
+}
+
+.confirm-code-input {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	max-width: 65px;
+	width: 100%;
+	height: 65px;
+	padding: 0;
+
+	border-radius: 8px;
+	border: 1px solid #2e2e3e;
+	background-color: var(--bg-gray);
+
+	color: var(--white);
+	text-align: center;
+	font-family: Stolzl;
+	font-size: 26px;
+	font-weight: 400;
+	letter-spacing: 2.6px;
+
+	@media screen and (max-width: 768px) {
+		font-size: 20px;
+
+		letter-spacing: 2px;
+	}
+}
+
+.confirm-time {
+	color: #7a7488;
+	text-align: center;
+	font-family: Stolzl;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 140%;
+	&_position {
+		margin-bottom: 30px;
+	}
+}

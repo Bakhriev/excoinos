@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<title>title</title>
+	</head>
+
+	<body>
+		<div class="overlay"></div>
+
+		<div class="wrapper">
+			<div class="texture orange-tex-rect orange-tex-rect--1"></div>
+			<div class="texture orange-tex-circle orange-tex-circle--1"></div>
+			<div class="texture violet-tex-rect violet-tex-rect--1"></div>
+			<div class="texture violet-tex-circle violet-tex-circle--1"></div>
+
+			<div class="texture orange-tex-rect orange-tex-rect--3"></div>
+			<div class="texture violet-tex-circle violet-tex-circle--3"></div>
+
+			@include('../assets/layout/header.html')
+
+			<main class="main">
+				<section class="contact in_view">
+					<div class="contact__container container">
+						<ul class="breadcrumbs contact__breadcrumbs list-reset">
+							<li class="breadcrumbs-item gradient-link move-top">Home</li>
+							<li class="breadcrumbs-item move-top">contact</li>
+						</ul>
+						<h1 class="contact__title section-title move-top">contact</h1>
+						<p class="contact__subtitle move-top">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+							enim ad minim veniam, quis nostrud exercitation ullamco laboris
+							nisi ut aliquip ex ea commodo consequat.
+						</p>
+
+						<div class="license-info contact__license">
+							<div class="license-item move-right">
+								<div class="license-item__title">
+									Global coverage of 180+ countries and unprecedented 48 US
+									states
+								</div>
+								<div class="license-item__text">
+									Buy & sell cryptocurrencies no matter where you are
+								</div>
+							</div>
+							<div class="license-item move-left">
+								<div class="license-item__title">
+									FinCEN Department of the Treasury, United States of America
+								</div>
+								<div class="license-item__text">
+									Money Service Business Registration: 31000224635628
+								</div>
+							</div>
+						</div>
+
+						<div class="support-details contact__details">
+							<div class="support-detail move-top">
+								<div class="support-detail__title">Address:</div>
+								<div class="support-detail__text">
+									г. Москва, ул. Покровка, дом 24 стр. 9, офис 11 Б
+								</div>
+							</div>
+							<div class="support-detail move-top">
+								<div class="support-detail__title">Address:</div>
+								<div class="support-detail__text">
+									г. Москва, ул. Покровка, дом 24 стр. 9, офис 11 Б
+								</div>
+							</div>
+							<div class="support-detail move-top">
+								<div class="support-detail__title">Тех. поддержка</div>
+								<a href="mailto:support@paybis.com" class="support-detail__link"
+									>support@paybis.com</a
+								>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			@include('../assets/layout/footer.html')
+		</div>
+
+		<script type="module" src="assets/js/main.js"></script>
+	</body>
+</html>

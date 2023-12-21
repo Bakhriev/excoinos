@@ -1,0 +1,127 @@
+.prices {
+	padding-top: 84px;
+
+	@media screen and (max-width: 992px) {
+		padding-top: 26px;
+	}
+
+	&__breadcrumbs {
+		margin-bottom: 18px;
+		justify-content: center;
+
+		@media screen and (max-width: 992px) {
+			margin-bottom: 13px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 22px;
+
+		@media screen and (max-width: 992px) {
+			margin-bottom: 16px;
+		}
+
+		@media screen and (max-width: 768px) {
+		}
+	}
+
+	&__categories {
+		margin: 0 auto;
+		margin-bottom: 20px;
+		max-width: 750px;
+
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+
+	&__search {
+		max-width: 750px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+
+		@media screen and (max-width: 992px) {
+			margin-bottom: 35px;
+		}
+	}
+
+	&__table {
+		margin-bottom: 28px;
+	}
+
+	&__link {
+		@media screen and (max-width: 768px) {
+			margin: 0 auto;
+		}
+	}
+}
+
+.categories {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 15px 12px;
+
+	&__btn {
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+		padding: 10px 12px;
+
+		color: var(--text-gray);
+		font-family: Stolzl;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 24px;
+
+		border-radius: 6px;
+		border: 1px solid rgba(255, 255, 255, 0.05);
+		background-color: var(--bg-gray);
+
+		transition:
+			background-color 300ms ease-in-out,
+			color 300ms ease-in-out;
+
+		&.active {
+			color: var(--white);
+			border: 1px solid transparent;
+
+			&::before,
+			&::after {
+				content: '';
+				position: absolute;
+				inset: 0;
+				z-index: -1;
+				transition: opacity 300ms linear;
+			}
+
+			&::before {
+				background: var(--purple-gradient);
+			}
+
+			&::after {
+				background: var(--purple-gradient-hover);
+				opacity: 0;
+			}
+
+			@include hover {
+				&::before {
+					opacity: 0;
+				}
+
+				&::after {
+					opacity: 1;
+				}
+			}
+		}
+
+		@include hover {
+			color: var(--white);
+			background-color: #40404f;
+		}
+
+		&:active {
+			scale: 0.97;
+		}
+	}
+}

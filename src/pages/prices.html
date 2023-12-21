@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<title>title</title>
+	</head>
+
+	<body>
+		<div class="overlay"></div>
+
+		<div class="wrapper">
+			<div class="texture orange-tex-rect orange-tex-rect--1"></div>
+			<div class="texture orange-tex-circle orange-tex-circle--1"></div>
+			<div class="texture violet-tex-rect violet-tex-rect--1"></div>
+			<div class="texture violet-tex-circle violet-tex-circle--1"></div>
+
+			<div class="texture orange-tex-rect orange-tex-rect--3"></div>
+			<div class="texture violet-tex-circle violet-tex-circle--3"></div>
+
+			@include('../assets/layout/header.html')
+
+			<main class="main">
+				<section class="prices in_view">
+					<div class="prices__container container">
+						<ul class="breadcrumbs prices__breadcrumbs list-reset">
+							<li class="breadcrumbs-item gradient-link move-top">Home</li>
+							<li class="breadcrumbs-item move-top">Prices</li>
+						</ul>
+						<h1 class="prices__title section-title move-top">Crypto Prices</h1>
+						<div class="categories prices__categories">
+							<button class="categories__btn move-right active button-reset">
+								Popular
+							</button>
+							<button class="categories__btn move-right button-reset">
+								Metaverse
+							</button>
+							<button class="categories__btn move-right button-reset">
+								Entertainment
+							</button>
+							<button class="categories__btn move-right button-reset">
+								Energy
+							</button>
+							<button class="categories__btn move-right button-reset">
+								Gaming
+							</button>
+							<button class="categories__btn move-right button-reset">
+								Music
+							</button>
+							<button class="categories__btn move-right button-reset">
+								See All 12+
+							</button>
+						</div>
+						<form action="#" class="search prices__search move-right">
+							<input
+								type="text"
+								class="search__field"
+								placeholder="Search "
+								value=""
+							/>
+							<button type="submit" class="search__btn button-reset">
+								<svg
+									aria-hidden="click to send email"
+									class="search__icon"
+									width="20px"
+									height="20px"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+									<g
+										id="SVGRepo_tracerCarrier"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+
+									<g id="SVGRepo_iconCarrier">
+										<path
+											d="M16.6725 16.6412L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</g>
+								</svg>
+							</button>
+						</form>
+
+						<!--  -->
+
+						<table class="table prices__table">
+							<thead>
+								<tr class="table__grid table__thead-row move-left">
+									<th>no</th>
+									<th>name</th>
+									<th>last price</th>
+									<th>change</th>
+									<th>market stats</th>
+									<th>trade</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="table__tbody-row table__grid move-left">
+									<td>1</td>
+									<td>
+										<div class="table-info">
+											<img
+												src="./assets/img/icons/btc.svg"
+												alt="btc"
+												class="table-info__img"
+											/>
+											<div class="table-info__wrapper">
+												<div>Bitcoin</div>
+												<div class="table-info__type">BTC</div>
+											</div>
+										</div>
+									</td>
+									<td>$56,623.54</td>
+									<td class="table-change">
+										<svg
+											width="10"
+											height="9"
+											viewBox="0 0 10 9"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M3.61452 3.62536L2.25797 4.99805C1.7585 5.50347 1.76332 6.31809 2.26874 6.81755C2.77415 7.31702 3.58877 7.3122 4.08824 6.80679L5.44478 5.43409L9.05933 9.0061L9.00603 4.62429e-05L-2.36236e-05 0.0533388L3.61452 3.62536Z"
+											/>
+										</svg>
+										<span>1.41%</span>
+									</td>
+
+									<td>
+										<img src="./assets/img/stats-green.png" alt="img" />
+									</td>
+									<td>
+										<button class="btn btn-gradient btn-sm button-reset">
+											Trade
+										</button>
+									</td>
+								</tr>
+								<tr class="table__tbody-row table__grid move-left">
+									<td>1</td>
+									<td>
+										<div class="table-info">
+											<img
+												src="./assets/img/icons/btc.svg"
+												alt="btc"
+												class="table-info__img"
+											/>
+											<div class="table-info__wrapper">
+												<div>Bitcoin</div>
+												<div class="table-info__type">BTC</div>
+											</div>
+										</div>
+									</td>
+									<td>$56,623.54</td>
+									<td class="table-change table-change_positive">
+										<svg
+											width="10"
+											height="9"
+											viewBox="0 0 10 9"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M3.61452 3.62536L2.25797 4.99805C1.7585 5.50347 1.76332 6.31809 2.26874 6.81755C2.77415 7.31702 3.58877 7.3122 4.08824 6.80679L5.44478 5.43409L9.05933 9.0061L9.00603 4.62429e-05L-2.36236e-05 0.0533388L3.61452 3.62536Z"
+											/>
+										</svg>
+										<span>1.41%</span>
+									</td>
+									<td>
+										<img src="./assets/img/stats-green.png" alt="img" />
+									</td>
+									<td>
+										<button class="btn btn-gradient btn-sm button-reset">
+											Trade
+										</button>
+									</td>
+								</tr>
+								<tr class="table__tbody-row table__grid move-left">
+									<td>1</td>
+									<td>
+										<div class="table-info">
+											<img
+												src="./assets/img/icons/btc.svg"
+												alt="btc"
+												class="table-info__img"
+											/>
+											<div class="table-info__wrapper">
+												<div>Bitcoin</div>
+												<div class="table-info__type">BTC</div>
+											</div>
+										</div>
+									</td>
+									<td>$56,623.54</td>
+									<td class="table-change table-change_positive">
+										<svg
+											width="10"
+											height="9"
+											viewBox="0 0 10 9"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M3.61452 3.62536L2.25797 4.99805C1.7585 5.50347 1.76332 6.31809 2.26874 6.81755C2.77415 7.31702 3.58877 7.3122 4.08824 6.80679L5.44478 5.43409L9.05933 9.0061L9.00603 4.62429e-05L-2.36236e-05 0.0533388L3.61452 3.62536Z"
+											/>
+										</svg>
+										<span>1.41%</span>
+									</td>
+									<td>
+										<img src="./assets/img/stats-green.png" alt="img" />
+									</td>
+									<td>
+										<button class="btn btn-gradient btn-sm button-reset">
+											Trade
+										</button>
+									</td>
+								</tr>
+								<tr class="table__tbody-row table__grid move-left">
+									<td>1</td>
+									<td>
+										<div class="table-info">
+											<img
+												src="./assets/img/icons/btc.svg"
+												alt="btc"
+												class="table-info__img"
+											/>
+											<div class="table-info__wrapper">
+												<div>Bitcoin</div>
+												<div class="table-info__type">BTC</div>
+											</div>
+										</div>
+									</td>
+									<td>$56,623.54</td>
+									<td class="table-change table-change_positive">
+										<svg
+											width="10"
+											height="9"
+											viewBox="0 0 10 9"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M3.61452 3.62536L2.25797 4.99805C1.7585 5.50347 1.76332 6.31809 2.26874 6.81755C2.77415 7.31702 3.58877 7.3122 4.08824 6.80679L5.44478 5.43409L9.05933 9.0061L9.00603 4.62429e-05L-2.36236e-05 0.0533388L3.61452 3.62536Z"
+											/>
+										</svg>
+										<span>1.41%</span>
+									</td>
+									<td>
+										<img src="./assets/img/stats-green.png" alt="img" />
+									</td>
+									<td>
+										<button class="btn btn-gradient btn-sm button-reset">
+											Trade
+										</button>
+									</td>
+								</tr>
+								<tr class="table__tbody-row table__grid move-left">
+									<td>1</td>
+									<td>
+										<div class="table-info">
+											<img
+												src="./assets/img/icons/btc.svg"
+												alt="btc"
+												class="table-info__img"
+											/>
+											<div class="table-info__wrapper">
+												<div>Bitcoin</div>
+												<div class="table-info__type">BTC</div>
+											</div>
+										</div>
+									</td>
+									<td>$56,623.54</td>
+									<td class="table-change table-change_negative">
+										<svg
+											width="10"
+											height="9"
+											viewBox="0 0 10 9"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M3.61452 3.62536L2.25797 4.99805C1.7585 5.50347 1.76332 6.31809 2.26874 6.81755C2.77415 7.31702 3.58877 7.3122 4.08824 6.80679L5.44478 5.43409L9.05933 9.0061L9.00603 4.62429e-05L-2.36236e-05 0.0533388L3.61452 3.62536Z"
+											/>
+										</svg>
+										<span>1.41%</span>
+									</td>
+									<td>
+										<img src="./assets/img/stats-red.png" alt="img" />
+									</td>
+									<td>
+										<button class="btn btn-gradient btn-sm button-reset">
+											Trade
+										</button>
+									</td>
+								</tr>
+								<tr class="table__tbody-row table__grid move-left">
+									<td>1</td>
+									<td>
+										<div class="table-info">
+											<img
+												src="./assets/img/icons/btc.svg"
+												alt="btc"
+												class="table-info__img"
+											/>
+											<div class="table-info__wrapper">
+												<div>Bitcoin</div>
+												<div class="table-info__type">BTC</div>
+											</div>
+										</div>
+									</td>
+									<td>$56,623.54</td>
+									<td class="table-change table-change_negative">
+										<svg
+											width="10"
+											height="9"
+											viewBox="0 0 10 9"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M3.61452 3.62536L2.25797 4.99805C1.7585 5.50347 1.76332 6.31809 2.26874 6.81755C2.77415 7.31702 3.58877 7.3122 4.08824 6.80679L5.44478 5.43409L9.05933 9.0061L9.00603 4.62429e-05L-2.36236e-05 0.0533388L3.61452 3.62536Z"
+											/>
+										</svg>
+										<span>1.41%</span>
+									</td>
+									<td>
+										<img src="./assets/img/stats-red.png" alt="img" />
+									</td>
+									<td>
+										<button class="btn btn-gradient btn-sm button-reset">
+											Trade
+										</button>
+									</td>
+								</tr>
+								<tr class="table__tbody-row table__grid move-left">
+									<td>1</td>
+									<td>
+										<div class="table-info">
+											<img
+												src="./assets/img/icons/btc.svg"
+												alt="btc"
+												class="table-info__img"
+											/>
+											<div class="table-info__wrapper">
+												<div>Bitcoin</div>
+												<div class="table-info__type">BTC</div>
+											</div>
+										</div>
+									</td>
+									<td>$56,623.54</td>
+									<td class="table-change table-change_negative">
+										<svg
+											width="10"
+											height="9"
+											viewBox="0 0 10 9"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M3.61452 3.62536L2.25797 4.99805C1.7585 5.50347 1.76332 6.31809 2.26874 6.81755C2.77415 7.31702 3.58877 7.3122 4.08824 6.80679L5.44478 5.43409L9.05933 9.0061L9.00603 4.62429e-05L-2.36236e-05 0.0533388L3.61452 3.62536Z"
+											/>
+										</svg>
+										<span>1.41%</span>
+									</td>
+									<td>
+										<img src="./assets/img/stats-red.png" alt="img" />
+									</td>
+									<td>
+										<button class="btn btn-gradient btn-sm button-reset">
+											Trade
+										</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<a href="#" class="prices__link gradient-link move-right"
+							>See All Coins</a
+						>
+
+						<!--  -->
+					</div>
+				</section>
+			</main>
+
+			@include('../assets/layout/footer.html')
+		</div>
+
+		<script type="module" src="assets/js/main.js"></script>
+	</body>
+</html>

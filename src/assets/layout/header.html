@@ -1,0 +1,84 @@
+<header class="header in_view">
+	<div class="header__container">
+		<div class="logo-container move-right">
+			<a href="#" class="logo logo_main"
+				><img
+					width="161"
+					height="24"
+					src="./assets/img/icons/main-logo.svg"
+					alt="logo"
+			/></a>
+
+			<a href="#" class="logo logo_mobile header__logo"
+				><img
+					width="150"
+					height="40"
+					src="./assets/img/icons/mobile-logo.svg"
+					alt="logo"
+			/></a>
+		</div>
+		<div class="mobile-menu">
+			<div class="mobile-menu__content">
+				<nav class="header__nav">
+					<ul class="menu">
+						<li class="move-bot">
+							<a href="#" class="menu__link border-bottom-line">Buy / Sell</a>
+						</li>
+						<li class="move-bot">
+							<a href="#" class="menu__link border-bottom-line"
+								>Crypto Prices</a
+							>
+						</li>
+						<li class="move-bot">
+							<a href="#" class="menu__link border-bottom-line"
+								>Documentation</a
+							>
+						</li>
+						<li class="move-bot">
+							<a href="#" class="menu__link border-bottom-line">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__actions">
+					<button class="lang-drop move-left" tabindex="0">
+						<div class="lang-drop__toggle">
+							<div>English</div>
+							<div class="lang-drop__icon" data-icon="arrow-bottom"></div>
+						</div>
+						<ul class="lang-menu">
+							<li class="lang-menu__item" tabindex="0">Text 1</li>
+							<li class="lang-menu__item" tabindex="0">Text 1</li>
+							<li class="lang-menu__item" tabindex="0">Text 1</li>
+						</ul>
+					</button>
+
+					<div class="header__buttons">
+						<button class="btn btn-border button-reset move-left">
+							Log in
+						</button>
+						<button class="btn btn-gradient button-reset move-left">
+							Sign up
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  -->
+		<div class="header__burger-wrapper">
+			<button class="lang-drop move-left" tabindex="0">
+				<div class="lang-drop__toggle">
+					<div>English</div>
+					<div class="lang-drop__icon" data-icon="arrow-bottom"></div>
+				</div>
+				<ul class="lang-menu">
+					<li class="lang-menu__item" tabindex="0">Text 1</li>
+					<li class="lang-menu__item" tabindex="0">Text 1</li>
+					<li class="lang-menu__item" tabindex="0">Text 1</li>
+				</ul>
+			</button>
+			@include('./components/burger.html')
+		</div>
+
+		<!--  -->
+	</div>
+</header>

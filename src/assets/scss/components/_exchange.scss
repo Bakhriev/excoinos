@@ -1,0 +1,129 @@
+.exchange {
+	position: relative;
+	z-index: 1;
+	margin: 0 auto;
+	max-width: 1040px;
+	width: 100%;
+	padding: 40px;
+	border: 0.5px solid #32324a;
+	border-radius: 30px;
+	background-color: rgba(20, 20, 27, 0.6);
+
+	@media screen and (max-width: 992px) {
+		border-radius: 20px;
+		padding: 20px;
+	}
+
+	&__top {
+		display: flex;
+		align-items: center;
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+			align-items: normal;
+		}
+		margin-bottom: 17px;
+		gap: 15px 16px;
+	}
+
+	&__bottom {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 20px 35px;
+		@media screen and (max-width: 520px) {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+	}
+
+	&__btn {
+		padding: 30px 38px;
+		color: var(--white);
+		font-family: Stolzl;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 100%;
+		text-transform: uppercase;
+		@media screen and (max-width: 520px) {
+			width: 100%;
+			padding: 22px 20px;
+			font-size: 16px;
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		@media screen and (max-width: 768px) {
+			gap: 14px;
+		}
+	}
+
+	&__icon {
+		margin-top: 40px;
+		cursor: pointer;
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+
+	&__text {
+		color: var(--text-gray-100);
+		font-family: Stolzl;
+		font-size: 16px;
+		font-weight: 400;
+	}
+}
+
+.exchange-block__title {
+	color: var(--text-gray-100);
+	font-family: Stolzl;
+	font-size: 16px;
+	font-weight: 400;
+
+	@media screen and (max-width: 992px) {
+		margin-bottom: 5px;
+		font-size: 14px;
+	}
+}
+
+.exchange-icon {
+	width: 18px;
+	height: 18px;
+}
+
+.exchange-details {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px 52px;
+}
+
+.exchange-detail {
+	color: var(--white);
+	font-family: Stolzl;
+	font-size: 14px;
+	font-weight: 500;
+
+	&__type {
+		margin-bottom: 4px;
+		font-weight: 400;
+	}
+
+	&__number {
+		font-weight: 500;
+	}
+}
+
+.exchange-block__top {
+	margin-bottom: 5px;
+	min-height: 42px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 15px 10px;
+	flex-wrap: wrap;
+}
